@@ -21,7 +21,7 @@ export default function MyApp(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>SEO Field. Suppose to b dynamic</title>
+        <title>IQ New website</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>

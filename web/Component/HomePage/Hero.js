@@ -11,6 +11,7 @@ const styles = makeStyles((theme) => ({
       height: "100vh",
       display: "grid",
       gridTemplateColumns: "repeat(4,1fr)",
+      gridTemplateRows: "1fr 1fr",
       gridAutoFlow: "row",
       position: "relative",
       letterSpacing: "-0.05em",
@@ -20,7 +21,7 @@ const styles = makeStyles((theme) => ({
       textAlign: "center",
     },
     [theme.breakpoints.down("xs")]: {
-      height: "50vh",
+      height: "100%",
       textAlign: "center",
     },
   },
@@ -78,6 +79,63 @@ const styles = makeStyles((theme) => ({
       fontWeight: "600",
     },
   },
+  smallBottomLeft: {
+    [theme.breakpoints.up("lg")]: {
+      position: "relative",
+      bottom: "-125px",
+      gridRow: 2,
+    },
+    [theme.breakpoints.down("md")]: {
+      position: "absolute",
+      bottom: "-10px",
+      width: "120px",
+      left: 0,
+      zIndex: 30,
+    },
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
+  },
+  smallBottomRight: {
+    [theme.breakpoints.up("lg")]: {
+      position: "absolute",
+      width: "800px",
+      right: 0,
+      zIndex: 30,
+      gridRow: 2,
+      bottom: "-30px",
+    },
+    [theme.breakpoints.down("md")]: {
+      position: "absolute",
+      bottom: "-10px",
+      width: "235px",
+      right: 0,
+      zIndex: "-20",
+    },
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
+  },
+  bigBottomRight: {
+    [theme.breakpoints.up("lg")]: {
+      position: "absolute",
+      width: "1380px",
+      right: 0,
+      zIndex: 30,
+      gridRow: 2,
+      bottom: "-10px",
+    },
+    [theme.breakpoints.down("md")]: {
+      position: "absolute",
+      bottom: "-10px",
+      width: "250px",
+      right: 0,
+      zIndex: "20",
+    },
+    [theme.breakpoints.down("xs")]: {
+      display: "none",
+    },
+  },
 }));
 
 function HomeHero() {
@@ -93,6 +151,15 @@ function HomeHero() {
             Far more than just an MIS.
           </Typography>
         </Box>
+      </Box>
+      <Box className={classes.smallBottomLeft} component="section">
+        <img src="svg/Cloud_1.svg" alt="cloud svg 1" />
+      </Box>
+      <Box className={classes.smallBottomRight} component="section">
+        <img src="svg/Cloud_2.svg" alt="cloud svg 2" />
+      </Box>
+      <Box className={classes.bigBottomRight} component="section">
+        <img src="svg/Cloud_3.svg" alt="cloud svg 3" />
       </Box>
     </div>
   );
