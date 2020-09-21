@@ -10,10 +10,10 @@ import styled from "styled-components";
 
 const styles = makeStyles((theme) => ({
   column: {
+    height: "100%",
     [theme.breakpoints.up("lg")]: {
       display: "grid",
       gridTemplateColumns: "repeat(4,1fr)",
-      height: "100vh",
       position: "relative",
       letterSpacing: "-0.05em",
     },
@@ -21,13 +21,11 @@ const styles = makeStyles((theme) => ({
       display: "flex",
       flexDirection: "column",
       position: "relative",
-      height: "100vh",
     },
     [theme.breakpoints.down("xs")]: {
       display: "flex",
       flexDirection: "column",
       position: "relative",
-      height: "100%",
     },
   },
   productMap: {
@@ -89,7 +87,7 @@ const styles = makeStyles((theme) => ({
       fontSize: "22px",
       paddingInlineStart: "20px",
       position: "relative",
-      top: "-180px",
+      top: "-60px",
       lineHeight: "22px",
     },
     [theme.breakpoints.down("md")]: {
@@ -179,7 +177,7 @@ function ProductMap() {
     <div className={classes.column}>
       <Box component="section" className={classes.productMap}>
         <img
-          src="/printIQ-Universe2020-map.jpg"
+          src="/homepage/printIQ-Universe2020-map.jpg"
           alt="printIQ universe product map"
           style={{ width: "100%" }}
         />
@@ -202,7 +200,7 @@ function ProductMap() {
           <Link href="#">
             <a className={classes.buttonBanner}>
               <span className={classes.buttonText}>Find Out more</span>
-              <ArrowForwardIcon className={classes.arrowIcon} fontSize="large" />
+              {/* <ArrowForwardIcon className={classes.arrowIcon} fontSize="large" /> */}
             </a>
           </Link>
         </Box>

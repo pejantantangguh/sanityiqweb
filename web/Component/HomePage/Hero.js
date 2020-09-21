@@ -40,6 +40,10 @@ const styles = makeStyles((theme) => ({
       textAlign: "center",
       display: "flex",
       maxWidth: "1500px",
+      padding: "45% 10%",
+    },
+    [theme.breakpoints.down("xs")]: {
+      padding: "45% 5%",
     },
   },
   heroCopy: {
@@ -63,6 +67,10 @@ const styles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("md")]: {
       fontSize: "36px",
+      fontWeight: "600",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "28px",
       fontWeight: "600",
     },
   },
@@ -147,7 +155,7 @@ function HomeHero() {
           <Typography variant="h1" className={classes.h1Main}>
             printIQ is your <br /> cloud-based management workflow system.
           </Typography>
-          <Typography variant="p" component="p" className={classes.pMain}>
+          <Typography variant="body1" component="p" className={classes.pMain}>
             Far more than just an MIS.
           </Typography>
         </Box>
