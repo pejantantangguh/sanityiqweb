@@ -119,14 +119,3 @@ function ContactUs() {
 }
 
 export default ContactUs;
-
-$(document).ready(function () {
-  $("#lp-pom-button-214").click(function () {
-    alert("Button Pressed");
-    gtag_report_conversion("https://demo.printiq.com/tryprintiq/");
-  });
-
-  $("#lp-pom-button-32").click(function () {
-    alert("Button Pressed 32");
-  });
-});
