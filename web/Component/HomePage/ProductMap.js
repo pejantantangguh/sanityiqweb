@@ -11,6 +11,8 @@ import styled from "styled-components";
 const styles = makeStyles((theme) => ({
   column: {
     height: "100%",
+    maxWidth: "1500px",
+    margin: "auto",
     [theme.breakpoints.up("lg")]: {
       display: "grid",
       gridTemplateColumns: "repeat(4,1fr)",

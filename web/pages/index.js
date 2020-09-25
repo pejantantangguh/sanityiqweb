@@ -4,6 +4,7 @@ import HomeHero from "../Component/HomePage/Hero";
 import MilkyWay from "../Component/HomePage/MilkyWay";
 import OurPartner from "../Component/HomePage/OurPartner";
 import ProductMap from "../Component/HomePage/ProductMap";
+import Testimonials from "../Component/HomePage/Testimonials";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <MilkyWay />
       <FutureOfPrint />
       <OurPartner />
+      <Testimonials />
     </>
   );
 };

@@ -13,6 +13,8 @@ const styles = makeStyles((theme) => ({
     color: "#fff",
   },
   column: {
+    maxWidth: "1500px",
+    margin: "auto",
     [theme.breakpoints.up("lg")]: {
       display: "grid",
       gridTemplateColumns: "repeat(4,1fr)",

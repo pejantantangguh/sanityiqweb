@@ -6,16 +6,20 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@sanity/client": "^1.150.7",
+    "formik": "^2.1.5",
     "next": "^9.5.3",
+    "next-compose-plugins": "2.2.0",
     "next-react-svg": "^1.1.2",
     "next-seo": "^4.7.3",
-    "next-compose-plugins": "2.2.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.2.0"
+    "react-elastic-carousel": "^0.7.5",
+    "styled-components": "^5.2.0",
+    "yup": "^0.29.3"
   },
   "devDependencies": {},
   "scripts": {

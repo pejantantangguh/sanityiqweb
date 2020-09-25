@@ -13,6 +13,7 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
+import ContactMailIcon from "@material-ui/icons/ContactMail";
 
 //To Do Active Link when visited page
 
@@ -57,6 +58,16 @@ function MenuContent() {
           <ListItemText>
             <Link href="/">
               <a>Home</a>
+            </Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <ContactMailIcon />
+          </ListItemIcon>
+          <ListItemText>
+            <Link href="/Contact-Us">
+              <a>Contact Us</a>
             </Link>
           </ListItemText>
         </ListItem>

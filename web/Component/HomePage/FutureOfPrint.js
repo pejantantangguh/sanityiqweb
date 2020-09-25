@@ -22,7 +22,7 @@ const styles = makeStyles((theme) => ({
       display: "flex",
       flexDirection: "column",
       position: "relative",
-      height: "75vh",
+      height: "100%",
     },
   },
   header: {

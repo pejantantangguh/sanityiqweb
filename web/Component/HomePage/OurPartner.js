@@ -1,5 +1,6 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
+import Link from "next/link";
 
 const styles = makeStyles((theme) => ({
   blueBackground: {
@@ -7,22 +8,20 @@ const styles = makeStyles((theme) => ({
     background: "linear-gradient(45deg,rgba(0, 255, 255, 1) 0%, rgba(0, 0, 255, 1) 100%)",
   },
   column: {
+    height: "100%",
     [theme.breakpoints.up("lg")]: {
-      height: "100%",
       display: "grid",
       gridTemplateColumns: "repeat(6,1fr)",
       gridAutoFlow: "row",
       position: "relative",
       letterSpacing: "-0.05em",
       maxWidth: "1500px",
-      margin: "auto",
+      margin: "30px auto",
     },
     [theme.breakpoints.down("md")]: {
-      height: "100vh",
       textAlign: "center",
     },
     [theme.breakpoints.down("xs")]: {
-      height: "100%",
       textAlign: "center",
     },
   },
@@ -46,11 +45,12 @@ const styles = makeStyles((theme) => ({
   header: {
     color: "#fff",
     alignSelf: "center",
+    marginTop: "25px",
     [theme.breakpoints.up("lg")]: {
       "& h3": {
         fontSize: "60px",
         fontWeight: "600",
-        marginBottom: 0,
+        marginBottom: "20px",
         padding: "0 105px 0 0",
       },
       gridColumn: "3/span 3",
@@ -61,6 +61,7 @@ const styles = makeStyles((theme) => ({
   },
   copy: {
     color: "#fff",
+    marginBottom: "25px",
     [theme.breakpoints.up("lg")]: {
       gridColumn: "3/span 3",
       "& p": {
@@ -80,19 +81,84 @@ const styles = makeStyles((theme) => ({
     },
   },
   branding: {
-    display: "grid",
-    gridColumn: "1/span 6",
-    gridTemplateColumns: "repeat(6,1fr)",
-    gridAutoFlow: "row",
-    margin: "0 0 2rem",
-    padding: "2rem 0rem 3rem 0rem",
-    borderRadius: "12px",
-    background: "#fff",
+    [theme.breakpoints.up("lg")]: {
+      display: "grid",
+      gridColumn: "1/span 6",
+      gridTemplateColumns: "repeat(6,1fr)",
+      gridAutoFlow: "row",
+      margin: "0 0 2rem",
+      padding: "2rem 0rem 3rem 0rem",
+      borderRadius: "12px",
+      background: "#fff",
+    },
+    [theme.breakpoints.down("md")]: {
+      display: "grid",
+      gridTemplateColumns: "33% 33% 33%",
+      background: "#fff",
+    },
+    [theme.breakpoints.down("xs")]: {
+      display: "grid",
+      gridTemplateColumns: "75%",
+      background: "#fff",
+      justifyContent: "center",
+      marginTop: "25px",
+    },
   },
   onPrintShop: {
     [theme.breakpoints.up("lg")]: {
       width: "80%",
       marginTop: "15px",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "80%",
+      marginTop: "15px",
+    },
+  },
+  sectionButton: {
+    textAlign: "center",
+    [theme.breakpoints.up("lg")]: {
+      gridColumn: "1/span 6",
+    },
+    [theme.breakpoints.down("md")]: {
+      margin: "25px 0",
+    },
+    [theme.breakpoints.down("xs")]: {
+      gridColumn: "2/span 4",
+      margin: "25px 0",
+    },
+  },
+  button: {
+    borderRadius: "10px",
+    cursor: "pointer",
+    textDecoration: "none",
+    border: 0,
+    background: "rgb(255, 255, 0)",
+    background: "linear-gradient(45deg,rgba(255, 255, 0, 1) 0%, rgba(255, 0, 0, 1) 100%)",
+    marginBottom: "30px",
+    [theme.breakpoints.up("lg")]: {
+      width: "16rem",
+      height: "4rem",
+    },
+    [theme.breakpoints.down("md")]: {
+      width: "12rem",
+      height: "3rem",
+    },
+  },
+  white: {
+    background: "#fff",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "24px",
+      fontWeight: 600,
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: "20px",
+      fontWeight: 900,
+    },
+    [theme.breakpoints.up("xs")]: {
+      fontSize: "18px",
+      fontWeight: 600,
     },
   },
 }));
@@ -177,6 +243,13 @@ function OurPartner() {
           <div>
             <img src="/svg/integrationpartner/Salesforce_145px.svg" alt="Sales Force Logo" />
           </div>
+        </Box>
+        <Box component="section" className={classes.sectionButton}>
+          <Box component="button" className={classes.button}>
+            <Link href="#">
+              <a className={classes.white}>Book your Demo</a>
+            </Link>
+          </Box>
         </Box>
       </div>
     </div>
