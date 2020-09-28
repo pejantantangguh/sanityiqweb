@@ -1,5 +1,6 @@
 import { Box, makeStyles } from "@material-ui/core";
 import React from "react";
+import ContactForm from "../Component/Form/ContactForm";
 
 const styles = makeStyles((theme) => ({
   videoContactUs: {
@@ -112,7 +113,9 @@ function ContactUs() {
             style={{ width: "100%" }}
           />
         </section>
-        <section className={classes.contactTable}></section>
+        <section className={classes.contactTable}>
+          <ContactForm />
+        </section>
       </div>
     </>
   );

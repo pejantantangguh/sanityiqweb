@@ -10,6 +10,9 @@ import {
   ListItemIcon,
   ListItemText,
   SwipeableDrawer,
+  Button,
+  Menu,
+  MenuItem,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
@@ -32,6 +35,13 @@ function MenuContent() {
   const [state, setState] = React.useState({
     left: false,
   });
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const handleClick = (e) => {
+    setAnchorEl(e.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event && event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {
@@ -68,6 +78,28 @@ function MenuContent() {
           <ListItemText>
             <Link href="/Contact-Us">
               <a>Contact Us</a>
+            </Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <ContactMailIcon />
+          </ListItemIcon>
+          <ListItemText>
+            {/* <Button aria-controls="Software Menu" aria-haspopup="true" onClick={handleClick}>
+              Software
+              <Menu
+                id="Software"
+                anchorEl={anchorEl}
+                keepMounted
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+              >
+                <MenuItem onClick={handleClose}>IQ Software</MenuItem>
+              </Menu>
+            </Button> */}
+            <Link href="/software">
+              <a>IQ Software</a>
             </Link>
           </ListItemText>
         </ListItem>

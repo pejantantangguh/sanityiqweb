@@ -7,7 +7,7 @@ const TextInput = ({ label, ...props }) => {
   // which we can spread on <input> and alse replace ErrorMessage entirely.
   const [field, meta] = useField(props);
   return (
-    <FormControl>
+    <FormControl fullWidth="true">
       <InputLabel id={props.id || props.name}>{label}</InputLabel>
       <Input {...field} {...props} />
       {meta.touched && meta.error ? <Alert severity="warning">{meta.error}</Alert> : null}
