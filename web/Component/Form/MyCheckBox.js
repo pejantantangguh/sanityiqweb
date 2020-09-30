@@ -1,4 +1,4 @@
-import { Checkbox, FormControlLabel, makeStyles } from "@material-ui/core";
+import { Checkbox, makeStyles } from "@material-ui/core";
 import { useField } from "formik";
 import styled from "styled-components";
 import React from "react";

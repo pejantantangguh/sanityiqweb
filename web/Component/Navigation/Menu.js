@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -10,24 +10,29 @@ import {
   ListItemIcon,
   ListItemText,
   SwipeableDrawer,
-  Button,
-  Menu,
-  MenuItem,
+  Collapse,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
 import ContactMailIcon from "@material-ui/icons/ContactMail";
+import ComputerIcon from "@material-ui/icons/Computer";
+import ExpandLess from "@material-ui/icons/ExpandLess";
+import ExpandMore from "@material-ui/icons/ExpandMore";
+import MenuList from "./MenuList";
 
 //To Do Active Link when visited page
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   list: {
-    width: 250,
+    width: 500,
   },
   fullList: {
     width: "auto",
   },
-});
+  nested: {
+    paddingLeft: theme.spacing(4),
+  },
+}));
 
 function MenuContent() {
   const classes = useStyles();
@@ -35,12 +40,9 @@ function MenuContent() {
   const [state, setState] = React.useState({
     left: false,
   });
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const handleClick = (e) => {
-    setAnchorEl(e.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
+  const [open, setOpen] = React.useState(true);
+  const handleClick = () => {
+    setOpen(!open);
   };
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -51,62 +53,9 @@ function MenuContent() {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor) => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === "top" || anchor === "bottom",
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        <ListItem>
-          <ListItemIcon>
-            <HomeIcon />
-          </ListItemIcon>
-          <ListItemText>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem>
-          <ListItemIcon>
-            <ContactMailIcon />
-          </ListItemIcon>
-          <ListItemText>
-            <Link href="/Contact-Us">
-              <a>Contact Us</a>
-            </Link>
-          </ListItemText>
-        </ListItem>
-        <ListItem>
-          <ListItemIcon>
-            <ContactMailIcon />
-          </ListItemIcon>
-          <ListItemText>
-            {/* <Button aria-controls="Software Menu" aria-haspopup="true" onClick={handleClick}>
-              Software
-              <Menu
-                id="Software"
-                anchorEl={anchorEl}
-                keepMounted
-                open={Boolean(anchorEl)}
-                onClose={handleClose}
-              >
-                <MenuItem onClick={handleClose}>IQ Software</MenuItem>
-              </Menu>
-            </Button> */}
-            <Link href="/software">
-              <a>IQ Software</a>
-            </Link>
-          </ListItemText>
-        </ListItem>
-      </List>
-      <Divider />
-    </div>
-  );
+  useEffect(() => {
+    toggleDrawer("left", false);
+  });
 
   return (
     <React.Fragment key={"left"}>
@@ -119,12 +68,13 @@ function MenuContent() {
         <MenuIcon />
       </IconButton>
       <SwipeableDrawer
+        className={classes.list}
         anchor={"left"}
         open={state["left"]}
         onClose={toggleDrawer("left", false)}
         onOpen={toggleDrawer("left", true)}
       >
-        {list("left")}
+        <MenuList />
       </SwipeableDrawer>
     </React.Fragment>
   );

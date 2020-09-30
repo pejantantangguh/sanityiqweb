@@ -18,7 +18,7 @@ const styles = makeStyles((theme) => ({
     marginTop: "20px",
   },
 }));
-function ContactForm() {
+function BookDemoForm() {
   const classes = styles();
   return (
     <>
@@ -65,7 +65,7 @@ function ContactForm() {
           }, 400);
         }}
       >
-        <Form className={classes.spacing}>
+        <Form>
           <TextInput
             label="First Name"
             name="firstName"
@@ -96,7 +96,9 @@ function ContactForm() {
             placeholder="Your workflow challenge"
             type="text"
           />
-          <MyCheckBox name="requestDemo">Demo Required?</MyCheckBox>
+          <MyCheckBox checked name="requestDemo" disable="true">
+            Demo Required?
+          </MyCheckBox>
           <Button className={classes.green} variant="contained" type="submit">
             Submit
           </Button>
@@ -106,4 +108,4 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default BookDemoForm;

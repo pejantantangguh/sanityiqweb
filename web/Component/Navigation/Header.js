@@ -49,7 +49,11 @@ function Header() {
           </Link>
         </Box>
         <Box justifyContent="flex-end">
-          <Button className={classes.button}>Book a Demo</Button>
+          <Link href="/book-a-demo">
+            <a>
+              <Button className={classes.button}>Book a Demo</Button>
+            </a>
+          </Link>
         </Box>
       </Toolbar>
     </AppBar>

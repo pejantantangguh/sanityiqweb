@@ -15,6 +15,7 @@ const styles = makeStyles((theme) => ({
       gridAutoFlow: "row",
       position: "relative",
       letterSpacing: "-0.05em",
+      zIndex: 10,
     },
     [theme.breakpoints.down("md")]: {
       height: "100vh",
