@@ -185,6 +185,16 @@ function Testimonials() {
               into automation.
             </Typography>
           </CardCustom>
+          <CardCustom>
+            <Image src="/homepage/McLays-Pic.jpg" alt="Mc Lays Images" title="Mc Lays Print" />
+
+            <Typography component="h3" className={classes.clientName}>
+              McLays
+            </Typography>
+            <Typography component="p" variant="body1" className={classes.clientCopy}>
+              We’ve been delighted with the progress made and the positive impact printIQ has had.
+            </Typography>
+          </CardCustom>
         </Carousel>
       </Box>
     </div>
