@@ -267,7 +267,7 @@ function FutureOfPrint() {
       <Box component="section" className={classes.sectionButton}>
         <Box component="button" className={classes.button}>
           <Link href="#">
-            <a className={classes.white}>Book your Demo</a>
+            <a className={classes.white}>Book your demo</a>
           </Link>
         </Box>
       </Box>

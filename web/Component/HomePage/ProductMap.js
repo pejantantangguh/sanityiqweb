@@ -116,13 +116,14 @@ const styles = makeStyles((theme) => ({
   },
   buttonBanner: {
     position: "relative",
+    textAlign: "center",
     "&:hover": {
       background: "#050505",
       color: "#fff",
     },
     [theme.breakpoints.up("lg")]: {
       borderRadius: "10px",
-      padding: "1.5rem 2rem",
+      padding: "1.5rem 0",
       width: "16rem",
       border: 0,
       cursor: "pointer",
@@ -135,7 +136,7 @@ const styles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("md")]: {
       borderRadius: "10px",
-      padding: "1.5rem 2rem",
+      padding: "1.5rem 0",
       border: 0,
       cursor: "pointer",
       background: "rgb(55, 158, 50)",

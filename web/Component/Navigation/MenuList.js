@@ -19,6 +19,7 @@ import ComputerIcon from "@material-ui/icons/Computer";
 import DuoIcon from "@material-ui/icons/Duo";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
+import DescriptionIcon from "@material-ui/icons/Description";
 
 //To Do Active Link when visited page
 
@@ -59,7 +60,7 @@ function MenuList() {
             <ContactMailIcon />
           </ListItemIcon>
           <ListItemText>
-            <Link href="/contact-usaaaaaaaaa">
+            <Link href="/contact-us">
               <a>Contact Us</a>
             </Link>
           </ListItemText>
@@ -120,6 +121,16 @@ function MenuList() {
             </ListItem>
           </List>
         </Collapse>
+        <ListItem>
+          <ListItemIcon>
+            <DescriptionIcon />
+          </ListItemIcon>
+          <ListItemText>
+            <Link href="/whitepaper">
+              <a>Whitepaper</a>
+            </Link>
+          </ListItemText>
+        </ListItem>
       </List>
       <Divider />
     </div>
