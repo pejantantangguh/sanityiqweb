@@ -9,6 +9,7 @@ import theme from "../theme.js";
 import Header from "../Component/Navigation/Header";
 import SEO from "../next-seo.config";
 import { DefaultSeo } from "next-seo";
+import StickyFooter from "../Component/Layout/Footer";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -32,6 +33,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
+        <StickyFooter />
       </ThemeProvider>
     </React.Fragment>
   );

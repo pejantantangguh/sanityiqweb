@@ -20,6 +20,7 @@ import DuoIcon from "@material-ui/icons/Duo";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import DescriptionIcon from "@material-ui/icons/Description";
+import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
 
 //To Do Active Link when visited page
 
@@ -128,6 +129,16 @@ function MenuList() {
           <ListItemText>
             <Link href="/whitepaper">
               <a>Whitepaper</a>
+            </Link>
+          </ListItemText>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <EmojiObjectsIcon />
+          </ListItemIcon>
+          <ListItemText>
+            <Link href="/tech">
+              <a>Tech</a>
             </Link>
           </ListItemText>
         </ListItem>
