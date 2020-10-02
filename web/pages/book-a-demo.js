@@ -1,4 +1,4 @@
-import { Box, makeStyles } from "@material-ui/core";
+import { Container, Box, makeStyles } from "@material-ui/core";
 import { NextSeo } from "next-seo";
 import React from "react";
 import BookDemoForm from "../Component/Form/BookDemoForm";
@@ -53,12 +53,12 @@ const styles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("md")]: {
       fontSize: "32px",
-      lineHeight: "60px",
+      lineHeight: "36px",
       textAlign: "center",
     },
     [theme.breakpoints.down("xs")]: {
       fontSize: "34px",
-      lineHeight: "60px",
+      lineHeight: "32px",
       textAlign: "center",
       margin: "0 auto",
     },
@@ -94,22 +94,26 @@ function BookADemo() {
       <NextSeo title="Book a demo page" description="Book a demo description" />
       <div className={classes.column}>
         <section className={classes.contactMap}>
-          <h3 className={classes.header}>
-            Book a demo <span className={classes.green}>and see the future of print today.</span>
-          </h3>
-          <p className={classes.content}>
-            Thanks for taking the time to find out more about the future of print with the printIQ
-            ecosystem. All you have to do is fill in the form and one of our specialists will reach
-            out and show you how to turn your plant into a well-oiled machine.
-          </p>
-          <img
-            src="/printIQ_Universe2020_1000pxX1000px.jpg"
-            alt="printIQ Universe"
-            style={{ width: "100%" }}
-          />
+          <Container>
+            <h3 className={classes.header}>
+              Book a demo <span className={classes.green}>and see the future of print today.</span>
+            </h3>
+            <p className={classes.content}>
+              Thanks for taking the time to find out more about the future of print with the printIQ
+              ecosystem. All you have to do is fill in the form and one of our specialists will
+              reach out and show you how to turn your plant into a well-oiled machine.
+            </p>
+            <img
+              src="/images/printIQ_Universe2020_1000pxX1000px.jpg"
+              alt="printIQ Universe"
+              style={{ width: "100%" }}
+            />
+          </Container>
         </section>
         <section className={classes.contactTable}>
-          <BookDemoForm />
+          <Container>
+            <BookDemoForm />
+          </Container>
         </section>
       </div>
     </>

@@ -41,7 +41,7 @@ function Header() {
           <Link href="/">
             <a>
               <img
-                src="/logo/printIQ-logo.png"
+                src="images/logo/printIQ-logo.png"
                 alt="printIQ logo"
                 className={classes.responsiveLogo}
               />

@@ -162,13 +162,13 @@ function HomeHero() {
         </Box>
       </Box>
       <Box className={classes.smallBottomLeft} component="section">
-        <img src="svg/Cloud_1.svg" alt="cloud svg 1" />
+        <img src="/images/svg/Cloud_1.svg" alt="cloud svg 1" />
       </Box>
       <Box className={classes.smallBottomRight} component="section">
-        <img src="svg/Cloud_2.svg" alt="cloud svg 2" />
+        <img src="/images/svg/Cloud_2.svg" alt="cloud svg 2" />
       </Box>
       <Box className={classes.bigBottomRight} component="section">
-        <img src="svg/Cloud_3.svg" alt="cloud svg 3" />
+        <img src="/images/svg/Cloud_3.svg" alt="cloud svg 3" />
       </Box>
     </div>
   );

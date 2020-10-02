@@ -180,7 +180,7 @@ function ProductMap() {
     <div className={classes.column}>
       <Box component="section" className={classes.productMap}>
         <img
-          src="/homepage/printIQ-Universe2020-map.jpg"
+          src="images/homepage/printIQ-Universe2020-map.jpg"
           alt="printIQ universe product map"
           style={{ width: "100%" }}
         />
@@ -203,7 +203,6 @@ function ProductMap() {
           <Link href="#">
             <a className={classes.buttonBanner}>
               <span className={classes.buttonText}>Find Out more</span>
-              {/* <ArrowForwardIcon className={classes.arrowIcon} fontSize="large" /> */}
             </a>
           </Link>
         </Box>

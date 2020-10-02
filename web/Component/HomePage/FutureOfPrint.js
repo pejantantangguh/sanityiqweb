@@ -185,7 +185,7 @@ function FutureOfPrint() {
         </Typography>
       </Box>
       <Box component="section" className={classes.segmentCard}>
-        <img src="/svg/icons_digital_green.svg" className={classes.imageSegmentation} />
+        <img src="/images/svg/icons_digital_green.svg" className={classes.imageSegmentation} />
         <Typography variant="h3" className={classes.green}>
           Digital
         </Typography>
@@ -195,7 +195,7 @@ function FutureOfPrint() {
         </Typography>
       </Box>
       <Box component="section" className={classes.segmentCard}>
-        <img src="/svg/icons_flexo_green.svg" className={classes.imageSegmentation} />
+        <img src="/images/svg/icons_flexo_green.svg" className={classes.imageSegmentation} />
         <Typography variant="h3" className={classes.green}>
           Flexo
         </Typography>
@@ -205,7 +205,7 @@ function FutureOfPrint() {
         </Typography>
       </Box>
       <Box component="section" className={classes.segmentCard}>
-        <img src="/svg/icons_fulfilment_green.svg" className={classes.imageSegmentation} />
+        <img src="/images/svg/icons_fulfilment_green.svg" className={classes.imageSegmentation} />
         <Typography variant="h3" className={classes.green}>
           Fulfillment
         </Typography>
@@ -215,7 +215,7 @@ function FutureOfPrint() {
         </Typography>
       </Box>
       <Box component="section" className={classes.segmentCard}>
-        <img src="/svg/icons_labels_green.svg" className={classes.imageSegmentation} />
+        <img src="/images/svg/icons_labels_green.svg" className={classes.imageSegmentation} />
         <Typography variant="h3" className={classes.green}>
           Labels
         </Typography>
@@ -225,7 +225,7 @@ function FutureOfPrint() {
         </Typography>
       </Box>
       <Box component="section" className={classes.segmentCard}>
-        <img src="/svg/icons_offset_green.svg" className={classes.imageSegmentation} />
+        <img src="/images/svg/icons_offset_green.svg" className={classes.imageSegmentation} />
         <Typography variant="h3" className={classes.green}>
           Offset
         </Typography>
@@ -235,7 +235,7 @@ function FutureOfPrint() {
         </Typography>
       </Box>
       <Box component="section" className={classes.segmentCard}>
-        <img src="/svg/icons_packaging_green.svg" className={classes.imageSegmentation} />
+        <img src="/images/svg/icons_packaging_green.svg" className={classes.imageSegmentation} />
         <Typography variant="h3" className={classes.green}>
           Packaging
         </Typography>
@@ -245,7 +245,7 @@ function FutureOfPrint() {
         </Typography>
       </Box>
       <Box component="section" className={classes.segmentCard}>
-        <img src="/svg/icons_signage_green.svg" className={classes.imageSegmentation} />
+        <img src="/images/svg/icons_signage_green.svg" className={classes.imageSegmentation} />
         <Typography variant="h3" className={classes.green}>
           Signage
         </Typography>
@@ -255,7 +255,7 @@ function FutureOfPrint() {
         </Typography>
       </Box>
       <Box component="section" className={classes.segmentCard}>
-        <img src="/svg/icons_wide_format_green.svg" className={classes.imageSegmentation} />
+        <img src="/images/svg/icons_wide_format_green.svg" className={classes.imageSegmentation} />
         <Typography variant="h3" className={classes.green}>
           Wide Format
         </Typography>

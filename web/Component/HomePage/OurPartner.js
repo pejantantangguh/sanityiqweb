@@ -169,7 +169,7 @@ function OurPartner() {
     <div className={classes.blueBackground}>
       <div className={classes.column}>
         <div className={classes.medalImage}>
-          <img src="/svg/number-1.svg" alt="Medal Image" className={classes.ImageWidth} />
+          <img src="/images/svg/number-1.svg" alt="Medal Image" className={classes.ImageWidth} />
         </div>
         <Box className={classes.header}>
           <Typography variant="h3">To be the best we work with the best</Typography>
@@ -183,65 +183,71 @@ function OurPartner() {
         </Box>
         <Box component="section" className={classes.branding}>
           <div>
-            <img src="/svg/integrationpartner/Infigo_145px.svg" alt="Infigo Logo" />
+            <img src="/images/svg/integrationpartner/Infigo_145px.svg" alt="Infigo Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Tilia_Labs_145px.svg" alt="Tililabs Logo" />
+            <img src="/images/svg/integrationpartner/Tilia_Labs_145px.svg" alt="Tililabs Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/HP_145px.svg" alt="HP Logo" />
+            <img src="/images/svg/integrationpartner/HP_145px.svg" alt="HP Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/ESKO_145px.svg" alt="Esko Logo" />
+            <img src="/images/svg/integrationpartner/ESKO_145px.svg" alt="Esko Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Izenda_145px.svg" alt="Izenda Logo" />
+            <img src="/images/svg/integrationpartner/Izenda_145px.svg" alt="Izenda Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Enfocus_145px.svg" alt="Enfocus Logo" />
+            <img src="/images/svg/integrationpartner/Enfocus_145px.svg" alt="Enfocus Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/XMPIE_145px.svg" alt="XMPie Logo" />
+            <img src="/images/svg/integrationpartner/XMPIE_145px.svg" alt="XMPie Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/QuickBooks_145px.svg" alt="Quickbooks Logo" />
+            <img src="/images/svg/integrationpartner/QuickBooks_145px.svg" alt="Quickbooks Logo" />
           </div>
           <div>
             <img
-              src="/homepage/OnPrintShop.jpg"
+              src="images/homepage/OnPrintShop.jpg"
               alt="On Printshop Logo"
               className={classes.onPrintShop}
             />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Zapier_145px.svg" alt="Zapier Logo" />
+            <img src="/images/svg/integrationpartner/Zapier_145px.svg" alt="Zapier Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Zoho_145px.svg" alt="Zoho Logo" />
-          </div>
-          <div>
-            <img src="/svg/integrationpartner/Chili_Publish_145px.svg" alt="Chili Publish Logo" />
+            <img src="/images/svg/integrationpartner/Zoho_145px.svg" alt="Zoho Logo" />
           </div>
           <div>
             <img
-              src="/svg/integrationpartner/Ultimate_Technologies_145px.svg"
+              src="/images/svg/integrationpartner/Chili_Publish_145px.svg"
+              alt="Chili Publish Logo"
+            />
+          </div>
+          <div>
+            <img
+              src="/images/svg/integrationpartner/Ultimate_Technologies_145px.svg"
               alt="Ultimate Technologies"
             />
           </div>
           <div>
-            <img src="/svg/integrationpartner/HybridSoftware_145px.svg" alt="Hybrid Software" />
+            <img
+              src="/images/svg/integrationpartner/HybridSoftware_145px.svg"
+              alt="Hybrid Software"
+            />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Fuji_Xerox_145px.svg" alt="FujiXerox" />
+            <img src="/images/svg/integrationpartner/Fuji_Xerox_145px.svg" alt="FujiXerox" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Xero_145px.svg" alt="Xero Logo" />
+            <img src="/images/svg/integrationpartner/Xero_145px.svg" alt="Xero Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Hubspot_145px.svg" alt="Hubspot Logo" />
+            <img src="/images/svg/integrationpartner/Hubspot_145px.svg" alt="Hubspot Logo" />
           </div>
           <div>
-            <img src="/svg/integrationpartner/Salesforce_145px.svg" alt="Sales Force Logo" />
+            <img src="/images/svg/integrationpartner/Salesforce_145px.svg" alt="Sales Force Logo" />
           </div>
         </Box>
         <Box component="section" className={classes.sectionButton}>

@@ -1,4 +1,4 @@
-import { Box, makeStyles } from "@material-ui/core";
+import { Box, makeStyles, Container } from "@material-ui/core";
 import React from "react";
 import ContactForm from "../Component/Form/ContactForm";
 
@@ -100,22 +100,24 @@ function ContactUs() {
       </div>
 
       <div className={classes.column}>
-        <section className={classes.contactMap}>
-          <h3 className={classes.header}>Contact us</h3>
-          <p className={classes.content}>
-            Thanks for taking the time to find out more about the future of print with the printIQ
-            ecosystem. All you have to do is fill in the form and one of our specialists will reach
-            out and show you how to turn your plant into a well-oiled machine.
-          </p>
-          <img
-            src="/printIQ_Universe2020_1000pxX1000px.jpg"
-            alt="printIQ Universe"
-            style={{ width: "100%" }}
-          />
-        </section>
-        <section className={classes.contactTable}>
-          <ContactForm />
-        </section>
+        <Container>
+          <section className={classes.contactMap}>
+            <h3 className={classes.header}>Contact us</h3>
+            <p className={classes.content}>
+              Thanks for taking the time to find out more about the future of print with the printIQ
+              ecosystem. All you have to do is fill in the form and one of our specialists will
+              reach out and show you how to turn your plant into a well-oiled machine.
+            </p>
+            <img
+              src="/images/printIQ_Universe2020_1000pxX1000px.jpg"
+              alt="printIQ Universe"
+              style={{ width: "100%" }}
+            />
+          </section>
+          <section className={classes.contactTable}>
+            <ContactForm />
+          </section>
+        </Container>
       </div>
     </>
   );

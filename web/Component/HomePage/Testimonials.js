@@ -113,7 +113,7 @@ function Testimonials() {
       <Box component="section" className={classes.content}>
         <Carousel breakPoints={breakpoints}>
           <CardCustom>
-            <Image src="/homepage/Cushing.jpg" alt="Cushing Images" title="Cushing" />
+            <Image src="images/homepage/Cushing.jpg" alt="Cushing Images" title="Cushing" />
 
             <Typography component="h3" className={classes.clientName}>
               Cushing
@@ -124,7 +124,7 @@ function Testimonials() {
             </Typography>
           </CardCustom>
           <CardCustom>
-            <Image src="/homepage/MattMillsFuzed.jpg" alt="Fuzed Images" title="Fuzed" />
+            <Image src="images/homepage/MattMillsFuzed.jpg" alt="Fuzed Images" title="Fuzed" />
 
             <Typography component="h3" className={classes.clientName}>
               Fuzed
@@ -136,7 +136,7 @@ function Testimonials() {
           </CardCustom>
           <CardCustom>
             <Image
-              src="/homepage/CourtneyColour.jpg"
+              src="images/homepage/CourtneyColour.jpg"
               alt="Courtney Colour Images"
               title="Courtney Colour"
             />
@@ -151,7 +151,7 @@ function Testimonials() {
           </CardCustom>
           <CardCustom>
             <Image
-              src="/homepage/RyersonUniversity.jpg"
+              src="images/homepage/RyersonUniversity.jpg"
               alt="Ryerson University Images"
               title="Ryerson University"
             />
@@ -164,7 +164,7 @@ function Testimonials() {
             </Typography>
           </CardCustom>
           <CardCustom>
-            <Image src="/homepage/CPC-Pic.jpg" alt="CPC Neutek Images" title="CPC Neutek" />
+            <Image src="images/homepage/CPC-Pic.jpg" alt="CPC Neutek Images" title="CPC Neutek" />
 
             <Typography component="h3" className={classes.clientName}>
               CPC Neutek
@@ -175,7 +175,7 @@ function Testimonials() {
             </Typography>
           </CardCustom>
           <CardCustom>
-            <Image src="/homepage/Soar-Pic.jpg" alt="Soar Print Images" title="Soar Print" />
+            <Image src="images/homepage/Soar-Pic.jpg" alt="Soar Print Images" title="Soar Print" />
 
             <Typography component="h3" className={classes.clientName}>
               Soar Print
@@ -186,7 +186,11 @@ function Testimonials() {
             </Typography>
           </CardCustom>
           <CardCustom>
-            <Image src="/homepage/McLays-Pic.jpg" alt="Mc Lays Images" title="Mc Lays Print" />
+            <Image
+              src="images/homepage/McLays-Pic.jpg"
+              alt="Mc Lays Images"
+              title="Mc Lays Print"
+            />
 
             <Typography component="h3" className={classes.clientName}>
               McLays
@@ -202,43 +206,3 @@ function Testimonials() {
 }
 
 export default Testimonials;
-{
-  /* <Card className={classes.card}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Cushing Images"
-              title="Cushing"
-              image="/homepage/Cushing.jpg"
-              className={classes.cardImage}
-            />
-
-            <CardContent>
-              <Typography component="h3">Cushing </Typography>
-              <Typography component="p" variant="body1">
-                How did we land on printIQ? They essentially checked all the boxes for an MIS
-                solution.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt="Cushing Images"
-              title="Cushing"
-              image="/homepage/Cushing.jpg"
-              className={classes.cardImage}
-            />
-
-            <CardContent>
-              <Typography component="h3">Cushing </Typography>
-              <Typography component="p" variant="body1">
-                How did we land on printIQ? They essentially checked all the boxes for an MIS
-                solution.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card> */
-}
