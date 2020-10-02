@@ -7,7 +7,7 @@ module.exports = withPlugins([
   [
     withReactSvg,
     {
-      include: path.resolve(__dirname, "public/assets/svg"),
+      include: path.resolve(__dirname, "public/images/assets/svg"),
     },
   ],
   [

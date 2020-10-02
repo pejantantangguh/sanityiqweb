@@ -100,8 +100,8 @@ function ContactUs() {
       </div>
 
       <div className={classes.column}>
-        <Container>
-          <section className={classes.contactMap}>
+        <section className={classes.contactMap}>
+          <Container>
             <h3 className={classes.header}>Contact us</h3>
             <p className={classes.content}>
               Thanks for taking the time to find out more about the future of print with the printIQ
@@ -109,15 +109,17 @@ function ContactUs() {
               reach out and show you how to turn your plant into a well-oiled machine.
             </p>
             <img
-              src="/images/printIQ_Universe2020_1000pxX1000px.jpg"
+              src="/images/homepage/printIQ_Universe2020_1000pxX1000px.jpg"
               alt="printIQ Universe"
               style={{ width: "100%" }}
             />
-          </section>
-          <section className={classes.contactTable}>
+          </Container>
+        </section>
+        <section className={classes.contactTable}>
+          <Container>
             <ContactForm />
-          </section>
-        </Container>
+          </Container>
+        </section>
       </div>
     </>
   );

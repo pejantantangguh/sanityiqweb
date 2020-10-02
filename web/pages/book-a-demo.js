@@ -104,7 +104,7 @@ function BookADemo() {
               reach out and show you how to turn your plant into a well-oiled machine.
             </p>
             <img
-              src="/images/printIQ_Universe2020_1000pxX1000px.jpg"
+              src="/images/homepage/printIQ_Universe2020_1000pxX1000px.jpg"
               alt="printIQ Universe"
               style={{ width: "100%" }}
             />

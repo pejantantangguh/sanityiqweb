@@ -7,7 +7,7 @@ const styles = makeStyles((theme) => ({
   cloudBackground: {
     background: "rgb(50, 87, 152)",
     background: "linear-gradient(0deg,rgba(50, 87, 152, 1) 0%, rgba(0, 25, 80, 1) 100%)",
-    background: "url('images/homepage/bg_starry-night2500W.png')",
+    background: "url('images/homepage/bg_starry-night2500W.jpg')",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     color: "#fff",
