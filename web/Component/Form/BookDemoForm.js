@@ -7,6 +7,7 @@ import SelectDropdown from "./SelectDropdown";
 import { Button, makeStyles, MenuItem } from "@material-ui/core";
 import MyTextField from "./MyTextField";
 import MyCheckBox from "./MyCheckBox";
+import Alert from "@material-ui/lab/Alert";
 
 const styles = makeStyles((theme) => ({
   green: {
@@ -19,6 +20,7 @@ const styles = makeStyles((theme) => ({
   },
 }));
 function BookDemoForm() {
+  const [isSubmit, setSubmit] = React.useState(false);
   const classes = styles();
   return (
     <>
@@ -48,21 +50,18 @@ function BookDemoForm() {
           challenge: Yup.string(),
           requestDemo: Yup.boolean(),
         })}
-        onSubmit={(values, { setSubmitting, resetForm }) => {
-          setTimeout(() => {
-            // alert(JSON.stringify(values, null, 2));
-            const response = fetch("https://hooks.zapier.com/hooks/catch/89032/ofb0dcz/", {
-              method: "POST",
-              body: JSON.stringify(values),
-            });
-            if (response.status == 200) {
-              alert("We will get back to you as soon as possible");
-            } else {
-              alert("Please email us at letstalk@printiq.com");
-            }
+        onSubmit={async (values, { setSubmitting, resetForm }) => {
+          const response = await fetch("https://hooks.zapier.com/hooks/catch/89032/ofb0dcz/", {
+            method: "POST",
+            body: JSON.stringify(values),
+          });
+          if (response.status == 200) {
             setSubmitting(false);
+            setSubmit(true);
             resetForm();
-          }, 400);
+          } else {
+            setSubmit(false);
+          }
         }}
       >
         <Form>
@@ -102,6 +101,7 @@ function BookDemoForm() {
           <Button className={classes.green} variant="contained" type="submit">
             Submit
           </Button>
+          {isSubmit ? <Alert severity="success">Thank you for your Submission</Alert> : null}
         </Form>
       </Formik>
     </>
