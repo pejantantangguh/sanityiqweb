@@ -49,7 +49,7 @@ const styles = makeStyles((theme) => ({
     [theme.breakpoints.up("lg")]: {
       fontSize: "60px",
       lineHeight: "60px",
-      marginTop: 0,
+      marginTop: "65px",
     },
     [theme.breakpoints.down("md")]: {
       fontSize: "32px",

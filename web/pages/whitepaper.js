@@ -67,7 +67,6 @@ const whitepaper = () => {
           Adopting cloud-based solutions provides the widest array of options, which is why printIQ
           is a leader in flexible print management.
         </Typography>
-
         <Box>
           <ContactForm />
         </Box>
