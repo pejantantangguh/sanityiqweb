@@ -63,7 +63,7 @@ export default function StickyFooter() {
               <h3>Explore </h3>
               <ul className={classes.footerNav}>
                 <li className={classes.navItem}>
-                  <Link href="#">
+                  <Link href="/about-us">
                     <a target="_blank">About</a>
                   </Link>
                 </li>
@@ -78,7 +78,7 @@ export default function StickyFooter() {
                   </Link>
                 </li>
                 <li className={classes.navItem}>
-                  <Link href="#">
+                  <Link href="/contact-us">
                     <a>Contact</a>
                   </Link>
                 </li>
