@@ -82,6 +82,11 @@ export default function StickyFooter() {
                     <a>Contact</a>
                   </Link>
                 </li>
+                <li className={classes.navItem}>
+                  <Link href="/policy">
+                    <a>Privacy Policy</a>
+                  </Link>
+                </li>
               </ul>
             </Grid>
             <Grid item xs={12} sm={6}>
