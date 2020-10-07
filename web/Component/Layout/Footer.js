@@ -83,6 +83,11 @@ export default function StickyFooter() {
                   </Link>
                 </li>
                 <li className={classes.navItem}>
+                  <Link href="/location">
+                    <a>Location</a>
+                  </Link>
+                </li>
+                <li className={classes.navItem}>
                   <Link href="/policy">
                     <a>Privacy Policy</a>
                   </Link>
