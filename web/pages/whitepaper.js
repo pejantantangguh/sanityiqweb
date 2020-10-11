@@ -58,7 +58,7 @@ const styles = makeStyles((theme) => ({
 }));
 
 const whitepaper = () => {
-  const [isSubmit, setSubmit] = React.useState(true);
+  const [isSubmit, setSubmit] = React.useState(false);
   const classes = styles();
   return (
     <>

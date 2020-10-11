@@ -77,7 +77,7 @@ const AboutUs = () => {
           </ul>
         </Typography>
       </Container>
-      <Container className={classes.container}>
+      {/* <Container className={classes.container}>
         <Grid container spacing={3}>
           <Grid item lg={4} xs={12}>
             <Paper className={classes.paper}>
@@ -130,7 +130,7 @@ const AboutUs = () => {
             </Paper>
           </Grid>
         </Grid>
-      </Container>
+      </Container> */}
     </>
   );
 };

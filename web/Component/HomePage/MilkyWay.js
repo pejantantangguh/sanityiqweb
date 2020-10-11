@@ -10,6 +10,11 @@ const styles = makeStyles((theme) => ({
     background: "url('images/homepage/bg_starry-night2500W.jpg')",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    minHeight: "100%",
+    position: "relative",
+    opacity: "1",
+    backgroundAttachment: "fixed",
+    backgroundPosition: "center",
     color: "#fff",
   },
   column: {

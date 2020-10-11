@@ -1,21 +1,12 @@
 import Link from "next/link";
-import {
-  Container,
-  Grid,
-  Paper,
-  makeStyles,
-  Typography,
-  List,
-  ListItem,
-  Box,
-  Button,
-} from "@material-ui/core";
+import { Container, makeStyles, Typography, List, ListItem, Box, Button, Grid } from "@material-ui/core";
 import { Alert, AlertTitle } from "@material-ui/lab";
 
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
 import TextInput from "../../Component/Form/TextInput";
 import ThankYou from "../../Component/Reuseable/ThankYou";
+import ProductGuide from "../../Component/Reuseable/ProductGuide";
 
 const styles = makeStyles((theme) => ({
   paper: {
@@ -49,6 +40,22 @@ const styles = makeStyles((theme) => ({
     margin: "20px auto",
     color: "#fff",
   },
+  rainbowText: {
+    background: "linear-gradient(45deg, rgba(255, 0, 255, 1) 0%,rgba(0, 255, 255, 1) 100%)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    width: "100%",
+    fontWeight: 600,
+    [theme.breakpoints.up("lg")]: {
+      fontSize: "24px",
+    },
+    [theme.breakpoints.down("md")]: {
+      fontSize: "20px",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "18px",
+    },
+  },
 }));
 
 function TechPage() {
@@ -80,21 +87,22 @@ function TechPage() {
           full production, scheduling, inventory, outsource, and dispatch data to the relevant
           workflow modules.
           <br />
-          <Box className={classes.box}>
-            <AlertTitle>TLDR </AlertTitle>
-            Download our product guide&nbsp;
-            <strong>
-              <Link href="#">
-                <a>here!</a>
-              </Link>
-            </strong>
-            or book a demo&nbsp;
-            <strong>
-              <Link href="/book-a-demo">
-                <a>here!</a>
-              </Link>
-            </strong>
-          </Box>
+          <Box className={classes.box}></Box>
+          <AlertTitle>
+            <strong>TLDR</strong>
+          </AlertTitle>
+          Download our product guide&nbsp;
+          <strong>
+            <Link href="#">
+              <a>here!</a>
+            </Link>
+          </strong>
+          or book a demo&nbsp;
+          <strong>
+            <Link href="/book-a-demo">
+              <a>here!</a>
+            </Link>
+          </strong>
         </Alert>
 
         <Typography variant="body1" component="p" gutterBottom={true}>
@@ -155,9 +163,10 @@ function TechPage() {
       </Container>
       <Container>
         {isSubmit ? (
-          <Box className={classes.box}>
-            <ThankYou pageVisited=" for downloading our product guide" />
-          </Box>
+        <>
+          <ThankYou pageVisited=" Click below to download our product guide" />
+          <ProductGuide />
+        </>
         ) : (
           <>
             <Alert severity="info">

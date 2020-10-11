@@ -25,7 +25,9 @@
     "styled-components": "^5.2.0",
     "yup": "^0.29.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "2.1.2"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
