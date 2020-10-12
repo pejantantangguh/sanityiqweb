@@ -4,16 +4,16 @@ const optimizedImages = require("next-optimized-images");
 const path = require("path");
 
 module.exports = withPlugins([
-  [
-    withReactSvg,
-    {
-      include: path.resolve(__dirname, "public/images/assets/svg"),
-    },
-  ],
-  [
-    optimizedImages,
-    {
-      optimizeImagesInDev: false,
-    },
-  ],
+	[
+		withReactSvg,
+		{
+			include: path.resolve(__dirname, "public/images/assets/svg"),
+		},
+	],
+	[
+		optimizedImages,
+		{
+			optimizeImagesInDev: true,
+		},
+	],
 ]);
