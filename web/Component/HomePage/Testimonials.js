@@ -128,6 +128,9 @@ function Testimonials() {
 						>
 							How did we land on printIQ? They essentially checked all the boxes
 							for an MIS solution.
+							<Link href="/testimonials/cushing">
+								<a>Read More...</a>
+							</Link>
 						</Typography>
 					</CardCustom>
 					<CardCustom>
@@ -147,6 +150,9 @@ function Testimonials() {
 						>
 							With printIQ we can log in anywhere in the world to track and
 							manage the entire project.
+							<Link href="/testimonials/fuzed">
+								<a>Read More...</a>
+							</Link>
 						</Typography>
 					</CardCustom>
 					<CardCustom>
@@ -166,6 +172,9 @@ function Testimonials() {
 						>
 							We have been with printIQ for 4 years and knew from the beginning
 							we’d made the right choice.
+							<Link href="/testimonials/courtney-colour">
+								<a>Read More...</a>
+							</Link>
 						</Typography>
 					</CardCustom>
 					<CardCustom>
@@ -185,6 +194,9 @@ function Testimonials() {
 						>
 							The printlQ software added enormous value to the teaching of my
 							students.
+							<Link href="/testimonials/ryerson-uni">
+								<a>Read More...</a>
+							</Link>
 						</Typography>
 					</CardCustom>
 					<CardCustom>
@@ -204,6 +216,9 @@ function Testimonials() {
 						>
 							We’ve been impressed by the support team and experienced many
 							productivity savings with printIQ.
+							<Link href="/testimonials/cpc-colorado">
+								<a>Read More...</a>
+							</Link>
 						</Typography>
 					</CardCustom>
 					<CardCustom>
@@ -223,6 +238,9 @@ function Testimonials() {
 						>
 							printIQ has delivered what we hoped and we look forward to taking
 							the business further into automation.
+							<Link href="/testimonials/soar">
+								<a>Read More...</a>
+							</Link>
 						</Typography>
 					</CardCustom>
 					<CardCustom>
@@ -242,6 +260,9 @@ function Testimonials() {
 						>
 							We’ve been delighted with the progress made and the positive
 							impact printIQ has had.
+							<Link href="/testimonials/mclays">
+								<a>Read More...</a>
+							</Link>
 						</Typography>
 					</CardCustom>
 				</Carousel>
