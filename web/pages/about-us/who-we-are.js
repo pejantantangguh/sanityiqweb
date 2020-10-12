@@ -1,5 +1,5 @@
 import { makeStyles, Container, Typography } from "@material-ui/core";
-import MemberAvatar from "./ourTeam";
+import MemberAvatar from "../../Component/AboutUs/ourTeam";
 
 const blueBackground = require("../../public/images/Blue-to-blue-cloud.jpg");
 const styles = makeStyles((theme) => ({
@@ -51,7 +51,9 @@ function whoWeAre() {
 					</Typography>
 				</Container>
 			</div>
-			<Container>{/* <MemberAvatar /> */}</Container>
+			<Container>
+				<MemberAvatar />
+			</Container>
 		</>
 	);
 }
