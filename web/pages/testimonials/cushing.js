@@ -1,5 +1,5 @@
 import { makeStyles, Container, Typography } from "@material-ui/core";
-
+import { NextSeo } from "next-seo";
 const greenBackground = require("../../public/images/about-us/green-bg.jpg");
 const cushingCompany = require("../../public/images/testimonials/Cushing-Your-Creative-Printing-Company-90-Years-Compress.jpg");
 
@@ -22,6 +22,31 @@ function Cushing() {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo
+				title="Cushing testimonials | printIQ Reviews"
+				description="Why Cushing choose printIQ"
+				canonical="https://www.printiq.com/testimonials/cushing"
+				openGraph={{
+					url: "https://www.printiq.com/testimonials/cushing",
+					title: "Cushing testimonials | printIQ Reviews",
+					description: "Why Cushing choose printIQ",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://www.printiq.com/testimonials/cushing",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
 			<div className={classes.greenBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h4">

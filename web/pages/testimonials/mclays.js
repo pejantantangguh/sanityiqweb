@@ -1,5 +1,5 @@
 import { makeStyles, Container, Typography } from "@material-ui/core";
-
+import { NextSeo } from "next-seo";
 const greenBackground = require("../../public/images/about-us/green-bg.jpg");
 
 const styles = makeStyles((theme) => ({
@@ -21,6 +21,31 @@ function McLays() {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo
+				title="McLays testimonials | printIQ Reviews"
+				description="Why McLays  choose printIQ"
+				canonical="https://www.printiq.com/testimonials/mclays"
+				openGraph={{
+					url: "https://www.printiq.com/testimonials/mclays",
+					title: "McLays  testimonials | printIQ Reviews",
+					description: "Why McLays  choose printIQ",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://www.printiq.com/testimonials/mclays",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
 			<div className={classes.greenBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h4">

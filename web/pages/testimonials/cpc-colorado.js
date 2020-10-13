@@ -1,5 +1,5 @@
 import { makeStyles, Container, Typography, List } from "@material-ui/core";
-
+import { NextSeo } from "next-seo";
 const greenBackground = require("../../public/images/about-us/green-bg.jpg");
 const mandyCPC = require("../../public/images/testimonials/Mandy_CPC_Neutek.jpg");
 
@@ -35,6 +35,31 @@ function cpcColodaro() {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo
+				title="CPC colorado testimonials | printIQ Reviews"
+				description="Why CPC colorado choose printIQ"
+				canonical="https://www.printiq.com/testimonials/cpc-colorado"
+				openGraph={{
+					url: "https://www.printiq.com/testimonials/cpc-colorado",
+					title: "CPC colorado testimonials | printIQ Reviews",
+					description: "Why CPC colorado choose printIQ",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://www.printiq.com/testimonials/cpc-colorado",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
 			<div className={classes.greenBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h4">

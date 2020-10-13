@@ -1,5 +1,5 @@
 import { makeStyles, Container, Typography } from "@material-ui/core";
-
+import { NextSeo } from "next-seo";
 const greenBackground = require("../../public/images/about-us/green-bg.jpg");
 const fuzedFrog = require("../../public/images/testimonials/frog_colour-1024x517.jpeg");
 const gsmCoating = require("../../public/images/testimonials/GSM_coating-1024x768.jpeg");
@@ -25,6 +25,31 @@ function Fuzed() {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo
+				title="Fuze testimonials | printIQ Reviews"
+				description="Why fuzed choose printIQ"
+				canonical="https://www.printiq.com/testimonials/fuzed"
+				openGraph={{
+					url: "https://www.printiq.com/testimonials/fuzed",
+					title: "Fuzed testimonials | printIQ Reviews",
+					description: "Why Fuzed choose printIQ",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://www.printiq.com/testimonials/fuzed",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
 			<div className={classes.greenBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h4">

@@ -1,4 +1,5 @@
 import { makeStyles, Container, Typography } from "@material-ui/core";
+import { NextSeo } from "next-seo";
 
 const greenBackground = require("../../public/images/about-us/green-bg.jpg");
 
@@ -30,6 +31,31 @@ function ryersonUni() {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo
+				title="Ryerson Uni testimonials | printIQ Reviews"
+				description="Why Ryerson Uni choose printIQ"
+				canonical="https://www.printiq.com/testimonials/ryerson-uni"
+				openGraph={{
+					url: "https://www.printiq.com/testimonials/ryerson-uni",
+					title: "Ryerson Uni testimonials | printIQ Reviews",
+					description: "Why Ryerson Uni choose printIQ",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://www.printiq.com/testimonials/ryerson-uni",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
 			<div className={classes.greenBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h4">

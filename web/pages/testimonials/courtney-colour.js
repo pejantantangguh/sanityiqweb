@@ -1,4 +1,5 @@
 import { makeStyles, Container, Typography } from "@material-ui/core";
+import { NextSeo } from "next-seo";
 
 const greenBackground = require("../../public/images/about-us/green-bg.jpg");
 
@@ -30,6 +31,32 @@ function CourtneyColour() {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo
+				title="Courtney colour testimonials | printIQ"
+				description="Why courtney color choose printIQ"
+				canonical="https://www.printiq.com/testimonials/courtney-colour"
+				openGraph={{
+					url: "https://www.printiq.com/testimonials/courtney-colour",
+					title: "Courtney colour testimonials | printIQ",
+					description: "Why courtney color choose printIQ",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://www.printiq.com/testimonials/courtney-colour",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
+			<Container></Container>
 			<div className={classes.greenBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h4">Courtney Colour</Typography>
