@@ -91,6 +91,10 @@ const styles = makeStyles((theme) => ({
 		cursor: "pointer",
 		borderRadius: "10px",
 		border: "0px",
+		"&:hover": {
+			background: "#000",
+			transition: "1s",
+		},
 		[theme.breakpoints.up("lg")]: {
 			gridRow: 3,
 			gridColumn: "2/span 2",
@@ -141,10 +145,7 @@ function MilkyWay() {
 				<Box component="button" className={classes.buttonMilk}>
 					<Typography component="span" className={classes.buttonText}>
 						<Link href="/book-a-demo">
-							<a>
-								Find Out more
-								{/* <ArrowForwardIcon fontSize="large" style={{ color: "rgba(0, 255, 255, 1)" }} /> */}
-							</a>
+							<a>Find Out more</a>
 						</Link>
 					</Typography>
 				</Box>

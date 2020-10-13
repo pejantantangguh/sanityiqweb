@@ -137,6 +137,10 @@ const styles = makeStyles((theme) => ({
 		background:
 			"linear-gradient(45deg,rgba(255, 255, 0, 1) 0%, rgba(255, 0, 0, 1) 100%)",
 		marginBottom: "30px",
+		"&:hover": {
+			background: "#000",
+			transition: "1s",
+		},
 		[theme.breakpoints.up("lg")]: {
 			width: "16rem",
 			height: "4rem",
