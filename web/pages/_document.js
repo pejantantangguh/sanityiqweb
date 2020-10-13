@@ -1,13 +1,35 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import * as snippet from "@segment/snippet";
 import { ServerStyleSheet as StyledComponentSSR } from "styled-components";
 import { ServerStyleSheets as MaterialUiSSR } from "@material-ui/core/styles";
 import theme from "../theme";
 
+const {
+	// This write key is associated with https://segment.com/nextjs-example/sources/nextjs.
+	ANALYTICS_WRITE_KEY = "hQjLj34PC1Cme4DNrAf8eE",
+	NODE_ENV = "development",
+} = process.env;
+
 class myDocument extends Document {
+	renderSnippet() {
+		const opts = {
+			apiKey: ANALYTICS_WRITE_KEY,
+			// note: the page option only covers SSR tracking.
+			// Layout.js is used to track other events using `window.analytics.page()`
+			layout: true,
+		};
+
+		if (NODE_ENV === "development") {
+			return snippet.max(opts);
+		}
+
+		return snippet.min(opts);
+	}
 	render() {
 		return (
 			<Html lang="en-US">
 				<Head>
+					<script dangerouslySetInnerHTML={{ __html: this.renderSnippet() }} />
 					<meta name="theme-color" content={theme.palette.primary.main} />
 					<link
 						rel="apple-touch-icon"

@@ -10,6 +10,7 @@ import Header from "../Component/Navigation/Header";
 import SEO from "../next-seo.config";
 import { DefaultSeo } from "next-seo";
 import StickyFooter from "../Component/Layout/Footer";
+import Layout from "../Component/Layout/Layout";
 
 export default function MyApp(props) {
 	const { Component, pageProps } = props;
@@ -34,9 +35,9 @@ export default function MyApp(props) {
 			<ThemeProvider theme={theme}>
 				{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
 				<CssBaseline />
-				<Header />
-				<Component {...pageProps} />
-				<StickyFooter />
+				<Layout>
+					<Component {...pageProps} />
+				</Layout>
 			</ThemeProvider>
 		</React.Fragment>
 	);
