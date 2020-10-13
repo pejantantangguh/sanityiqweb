@@ -3,9 +3,10 @@ import {
 	Container,
 	makeStyles,
 	Typography,
-	Grid,
-	Paper,
+	Button,
 } from "@material-ui/core";
+import Link from "next/link";
+import { NextSeo } from "next-seo";
 
 const styles = makeStyles((theme) => ({
 	greenBg: {
@@ -24,10 +25,15 @@ const styles = makeStyles((theme) => ({
 	container: {
 		marginTop: "120px",
 	},
-	paper: {
-		padding: theme.spacing(1),
-		textAlign: "center",
-		whiteSpace: "wrap",
+	green: {
+		background: "rgb(55, 158, 50)",
+		background:
+			"linear-gradient(45deg, rgba(55, 158, 50, 1) 0%,rgba(243, 230, 0, 1) 100% )",
+		width: "50%",
+		textDecoration: "none",
+		borderRadius: "10px",
+		margin: "20px 0",
+		fontSize: "24px",
 	},
 	box: {
 		margin: "15px auto",
@@ -39,6 +45,32 @@ const AboutUs = () => {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo
+				title="About printIQ, cloud-based management workflow system"
+				description="printIQ is a privately-owned company providing IT, custom software."
+				openGraph={{
+					url: "https://www.printiq.com/about-us",
+					title: "printIQ Far more than just an MIS",
+					description:
+						"printIQ is a privately-owned company providing IT, custom software.",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					site_name: "https://www.printiq.com/about-us",
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://printiq.com/about-us",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
 			<div className={classes.greenBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h2" component="h1">
@@ -65,14 +97,14 @@ const AboutUs = () => {
 					/>
 				</Box>
 				<Typography variant="h3" gutterBottom={true}>
-					Why IQ?
+					<strong>Why IQ?</strong>
 				</Typography>
 				<Typography variant="body1" component="p" gutterBottom={true}>
 					Customers are looking for a point of difference, at IQ you will
 					definitely find one:
 				</Typography>
 
-				<Typography variant="body1" component="p">
+				<Typography variant="body1" component="p" gutterBottom={true}>
 					<ul>
 						<li>
 							We have people that know the various industries and segments in
@@ -97,61 +129,45 @@ const AboutUs = () => {
 						</li>
 					</ul>
 				</Typography>
+				<Typography variant="h3" gutterBottom={true}>
+					<strong>The IQ Way</strong>
+				</Typography>
+				<Typography variant="body1" component="p" gutterBottom={true}>
+					It is our belief that the quality of an IT based product is
+					highlighted by its usability. At IQ we specialise in providing
+					complete business solutions with a simple and jargon-free approach. We
+					achieve this by having staff with both a business and technical
+					background so that we have a realistic and logical approach to our
+					solutions. Our functional approach means you don’t need to be
+					technologically minded, you focus on what you are good at and we’ll do
+					the same!
+				</Typography>
+				<Typography variant="h3" gutterBottom={true}>
+					<strong>Goals @IQ</strong>
+				</Typography>
+				<Typography variant="body1" component="p" gutterBottom={true}>
+					Our greatest strength is our ability to listen to what people are
+					looking to achieve and then providing a solution that far exceeds
+					their expectations. By utilising a true agile development method
+					combined with a lean sales implementation we harness real change for
+					our customers competitive advantage.
+				</Typography>
+				<Typography variant="body1" component="p" gutterBottom={true}>
+					Our highest priority is to satisfy our customers through effective and
+					continuous delivery of market-leading software. Our goal is to
+					implement the most comprehensive workflow, on the market today, into
+					your business and become your silent partner in print.
+				</Typography>
 			</Container>
-			{/* <Container className={classes.container}>
-        <Grid container spacing={3}>
-          <Grid item lg={4} xs={12}>
-            <Paper className={classes.paper}>
-              <Typography>NORTH AMERICA</Typography>
-              <Typography>Ann Arbor Office</Typography>
-              <Typography>
-                315 E Eisenhower Parkway, Suite 2, Ann Arbor MI 48108 U.S.A. Toll Free: 800 696 5513
-                letstalk@printIQ.com
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item lg={4} xs={12}>
-            <Paper className={classes.paper}>
-              <Typography>AUSTRALIA</Typography>
-              <Typography>Burleigh Office</Typography>
-              <Typography>
-                Level Two, McDonald House 37 Connor Street, Burleigh Heads QLD 4220 Australia Call:
-                1300 200 143 letstalk@printIQ.com
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item lg={4} xs={12}>
-            <Paper className={classes.paper}>
-              <Typography>NEW ZEALAND</Typography>
-              <Typography>Wellington Office</Typography>
-              <Typography>
-                Level Twelve 86 Victoria Street, Wellington 6011 New Zealand Call: 0800 725 662
-                letstalk@printIQ.com
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item lg={6} xs={12}>
-            <Paper className={classes.paper}>
-              <Typography>UNITED KINGDOM</Typography>
-              <Typography>Aylesbury Office</Typography>
-              <Typography>
-                Unit 8a Ground Floor, Gatehouse Way, Aylesbury, HP19 8XU UK15 Call: 01296 79 22 10
-                letstalk@printIQ.com
-              </Typography>
-            </Paper>
-          </Grid>
-          <Grid item lg={6} xs={12}>
-            <Paper className={classes.paper}>
-              <Typography>AUSTRALIA</Typography>
-              <Typography>Collingwood Office</Typography>
-              <Typography>
-                202/134 Cambridge Street Collingwood VIC 3066 Australia Call: 1300 200 143
-                letstalk@printIQ.com
-              </Typography>
-            </Paper>
-          </Grid>
-        </Grid>
-      </Container> */}
+			<Container>
+				<Link href="/about-us/who-we-are">
+					<a>
+						<Button className={classes.green} variant="contained" type="submit">
+							Meet our team!
+						</Button>
+					</a>
+				</Link>
+			</Container>
 		</>
 	);
 };

@@ -304,9 +304,9 @@ function MemberAvatar() {
 				<Grid item xs={12}>
 					<Typography variant="h3">The Directors</Typography>
 				</Grid>
-				{director.map((user) => (
-					<Grid item xs={12} sm={4}>
-						<Card key={user.id}>
+				{director.map((user, index) => (
+					<Grid item xs={12} sm={4} key={index}>
+						<Card>
 							<img src={user.imageURL} />
 							<CardContent>
 								<Typography gutterBottom variant="h5" component="h2">
@@ -321,9 +321,9 @@ function MemberAvatar() {
 				<Grid item xs={12}>
 					<Typography variant="h3">The Team</Typography>
 				</Grid>
-				{teamMember.map((user) => (
-					<Grid item xs={12} sm={4}>
-						<Card key={user.id}>
+				{teamMember.map((user, index) => (
+					<Grid item xs={12} sm={4} key={index}>
+						<Card>
 							<img src={user.imageURL} />
 							<CardContent>
 								<Typography gutterBottom variant="h5" component="h2">

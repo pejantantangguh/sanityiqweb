@@ -15,6 +15,7 @@ import * as Yup from "yup";
 import TextInput from "../../Component/Form/TextInput";
 import ThankYou from "../../Component/Reuseable/ThankYou";
 import ProductGuide from "../../Component/Reuseable/ProductGuide";
+import { NextSeo } from "next-seo";
 
 const styles = makeStyles((theme) => ({
 	paper: {
@@ -73,6 +74,33 @@ function TechPage() {
 	const [isSubmit, setSubmit] = React.useState(false);
 	return (
 		<>
+			<NextSeo
+				title="Download our product guide | printIQ far more than just an MIS"
+				description="The printIQ Core is made up of 8 modules that create a seamless, end‑to‑end estimating, ordering and production workflow encompassing everything needed for your future success in print."
+				openGraph={{
+					url: "https://www.printiq.com/tech",
+					title:
+						"Download our product guide | printIQ far more than just an MIS",
+					description:
+						"The printIQ Core is made up of 8 modules that create a seamless, end‑to‑end estimating, ordering and production workflow encompassing everything needed for your future success in print.",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					site_name: "https://www.printiq.com/tech",
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://printiq.com/tech",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
 			<Container>
 				<Typography variant="h3" component="h1" gutterBottom={true}>
 					Download our product Guide
@@ -107,9 +135,7 @@ function TechPage() {
 					</AlertTitle>
 					Download our product guide&nbsp;
 					<strong>
-						<Link href="#">
-							<a>here!</a>
-						</Link>
+						<a href="#bookDemo">here!</a>
 					</strong>
 					or book a demo&nbsp;
 					<strong>
@@ -199,7 +225,7 @@ function TechPage() {
 							Fill in our the form below and download our product guide
 						</Alert>
 
-						<Box className={classes.box}>
+						<Box className={classes.box} id="bookDemo">
 							<Formik
 								initialValues={{
 									firstName: "",

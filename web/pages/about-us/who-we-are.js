@@ -1,5 +1,6 @@
 import { makeStyles, Container, Typography } from "@material-ui/core";
 import MemberAvatar from "../../Component/AboutUs/ourTeam";
+import { NextSeo } from "next-seo";
 
 const blueBackground = require("../../public/images/Blue-to-blue-cloud.jpg");
 const styles = makeStyles((theme) => ({
@@ -23,6 +24,32 @@ function whoWeAre() {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo
+				title="Why printIQ | Meet our team | Who are we"
+				description="We have been delivering IT based solutions to business for the past 18 years and have staff based in Australia, New Zealand, Canada, North America and the UK"
+				openGraph={{
+					url: "https://www.printiq.com/about-us/who-we-are",
+					title: "printIQ Far more than just an MIS",
+					description:
+						"We have been delivering IT based solutions to business for the past 18 years and have staff based in Australia, New Zealand, Canada, North America and the UK",
+					images: [
+						{
+							url:
+								"https://iq-website.vercel.app/images/homepage/printIQ-Universe2020-map.jpg",
+							width: 800,
+							height: 600,
+							alt: "printIQ product Map",
+						},
+					],
+					site_name: "https://www.printiq.com/about-us/who-we-are",
+					locale: "en_US",
+				}}
+				twitter={{
+					handle: "https://printiq.com/about-us/who-we-are",
+					site: "@printIQGlobal",
+					cardType: "summary_large_image",
+				}}
+			/>
 			<div className={classes.blueBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h2" component="h1" gutterBottom={true}>
