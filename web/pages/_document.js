@@ -6,7 +6,7 @@ import theme from "../theme";
 
 const {
 	// This write key is associated with https://segment.com/nextjs-example/sources/nextjs.
-	ANALYTICS_WRITE_KEY = "hQjLj34PC1Cme4DNrAf8eE",
+	ANALYTICS_WRITE_KEY = "qFriond753RzvZ9LTT9Rr9P4OnSS4SyZ",
 	NODE_ENV = "development",
 } = process.env;
 
