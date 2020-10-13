@@ -13,7 +13,6 @@ const Index = () => {
 			<NextSeo
 				title="Print MIS | Print Workflow | Print Estimating Software | printIQ"
 				description="printIQ is a cloud-based management workflow system. You get a seamless, end-to-end estimating, ordering, and production workflow system."
-				canonical="https://www.printiq.com/"
 				openGraph={{
 					url: "https://www.printiq.com/",
 					title: "printIQ Far more than just an MIS",

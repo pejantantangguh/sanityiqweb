@@ -303,7 +303,7 @@ function OurPartner() {
 				</Box>
 				<Box component="section" className={classes.sectionButton}>
 					<Box component="button" className={classes.button}>
-						<Link href="#">
+						<Link href="/book-a-demo">
 							<a className={classes.white}>Book your Demo</a>
 						</Link>
 					</Box>
