@@ -6,10 +6,8 @@ import "../stylesheet/styles.css";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../theme.js";
-import Header from "../Component/Navigation/Header";
 import SEO from "../next-seo.config";
 import { DefaultSeo } from "next-seo";
-import StickyFooter from "../Component/Layout/Footer";
 import Layout from "../Component/Layout/Layout";
 
 export default function MyApp(props) {

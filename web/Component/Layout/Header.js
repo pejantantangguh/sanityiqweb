@@ -10,7 +10,7 @@ import {
 	Divider,
 } from "@material-ui/core";
 
-import MenuContent from "./Menu";
+import MenuContent from "../Navigation/Menu";
 
 const HeaderStyles = makeStyles((theme) => ({
 	title: {

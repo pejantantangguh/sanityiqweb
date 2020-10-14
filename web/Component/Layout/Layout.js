@@ -1,4 +1,4 @@
-import Header from "../Navigation/Header";
+import Header from "./Header";
 import StickyFooter from "./Footer";
 import React from "react";
 import Router from "next/router";

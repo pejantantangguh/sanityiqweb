@@ -56,7 +56,6 @@ function CourtneyColour() {
 					cardType: "summary_large_image",
 				}}
 			/>
-			<Container></Container>
 			<div className={classes.greenBg}>
 				<Container className={classes.centerAlign} maxWidth="md">
 					<Typography variant="h4">Courtney Colour</Typography>
@@ -100,7 +99,7 @@ function CourtneyColour() {
 						src="https://www.youtube.com/embed/4lbBIkEzcF8"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
+						allowFullScreen
 					></iframe>
 				</div>
 			</Container>

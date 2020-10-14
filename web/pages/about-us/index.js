@@ -99,6 +99,7 @@ const AboutUs = () => {
 				<Typography variant="h3" gutterBottom={true}>
 					<strong>Why IQ?</strong>
 				</Typography>
+
 				<Typography variant="body1" component="p" gutterBottom={true}>
 					Customers are looking for a point of difference, at IQ you will
 					definitely find one:
@@ -142,6 +143,16 @@ const AboutUs = () => {
 					technologically minded, you focus on what you are good at and we’ll do
 					the same!
 				</Typography>
+				<Box className={classes.box}>
+					<iframe
+						width="720"
+						height="480"
+						src="https://player.vimeo.com/video/467957069"
+						frameBorder="0"
+						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowFullScreen
+					/>
+				</Box>
 				<Typography variant="h3" gutterBottom={true}>
 					<strong>Goals @IQ</strong>
 				</Typography>
