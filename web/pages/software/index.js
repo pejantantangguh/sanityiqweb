@@ -1,9 +1,9 @@
 function SoftwarePage() {
-  return (
-    <>
-      <p>Software Pages</p>
-    </>
-  );
+	return (
+		<>
+			<p>Software Pages</p>
+		</>
+	);
 }
 
 export default SoftwarePage;
