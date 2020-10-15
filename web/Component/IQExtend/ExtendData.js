@@ -67,7 +67,7 @@ export const ExtendData = [
 					"Allows companies to acquire new businesses and link them to existing business entities.",
 			},
 		],
-		video: false,
+		video: true,
 		videoURL: "https://www.youtube.com/embed/WT-JyWL3zVE",
 	},
 ];
