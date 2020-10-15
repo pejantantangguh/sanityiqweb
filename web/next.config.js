@@ -15,6 +15,7 @@ module.exports = withPlugins([
 		optimizedImages,
 		{
 			optimizeImagesInDev: true,
+			include: path.resolve(__dirname, "public/images/*"),
 		},
 	],
 	[
