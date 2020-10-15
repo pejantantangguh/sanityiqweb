@@ -1,6 +1,6 @@
 import { Container, Grid, Typography, makeStyles } from "@material-ui/core";
 
-const IQPlusImages = require("../../public/images/IQ_plus.png");
+const IQExtendImages = require("../../public/images/IQ_extend.png");
 
 const styles = makeStyles((theme) => ({
 	imageResponsive: {
@@ -12,7 +12,7 @@ const styles = makeStyles((theme) => ({
 	},
 }));
 
-function PlusHero() {
+function CoreHero() {
 	const classes = styles();
 	return (
 		<>
@@ -27,19 +27,19 @@ function PlusHero() {
 					<Grid item xs={12} sm={6} className={classes.centering}>
 						<img
 							className={classes.imageResponsive}
-							src={IQPlusImages}
-							alt="IQ core image"
+							src={IQExtendImages}
+							alt="IQ Extend image"
 						/>
 					</Grid>
 					<Grid item xs={12} sm={6}>
 						<Typography variant="h3" component="h1">
-							IQ Plus
+							IQ Extend
 						</Typography>
 						<Typography variant="body1" component="p" gutterBottom={true}>
-							The IQplus range offers two additions to the Core: Approve for
-							integrated proofing initiated directly from the production
-							workflow, and Store+ to create a logistics operation, with pick
-							’n’ pack functionality, from within your print company.
+							We can also include options to add another internal site, a second
+							factory, or even a full satellite location. We have a range of
+							licenses that can be combined into the package at any stage to
+							enhance the overall solution.
 						</Typography>
 					</Grid>
 				</Grid>
@@ -48,4 +48,4 @@ function PlusHero() {
 	);
 }
 
-export default PlusHero;
+export default CoreHero;

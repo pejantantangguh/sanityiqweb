@@ -87,41 +87,41 @@ function MenuList() {
 				</ListItem>
 				<Collapse in={open} timeout="auto" unmountOnExit>
 					<List component="div" disablePadding>
-						<ListItem button className={classes.nested}>
-							<ListItemText>
-								<Link href="/software/iq-core">
+						<Link href="/software/iq-core">
+							<ListItem button className={classes.nested}>
+								<ListItemText>
 									<a>IQ Core</a>
-								</Link>
-							</ListItemText>
-						</ListItem>
-						<ListItem button className={classes.nested}>
-							<ListItemText>
-								<Link href="/software/iq-connect">
+								</ListItemText>
+							</ListItem>
+						</Link>
+						<Link href="/software/iq-connect">
+							<ListItem button className={classes.nested}>
+								<ListItemText>
 									<a>IQ Connect</a>
-								</Link>
-							</ListItemText>
-						</ListItem>
-						<ListItem button className={classes.nested}>
-							<ListItemText>
-								<Link href="/software/iq-plus">
+								</ListItemText>
+							</ListItem>
+						</Link>
+						<Link href="/software/iq-plus">
+							<ListItem button className={classes.nested}>
+								<ListItemText>
 									<a>IQ Plus</a>
-								</Link>
-							</ListItemText>
-						</ListItem>
-						<ListItem button className={classes.nested}>
-							<ListItemText>
-								<Link href="/software/iq-extend">
+								</ListItemText>
+							</ListItem>
+						</Link>
+						<Link href="/software/iq-extend">
+							<ListItem button className={classes.nested}>
+								<ListItemText>
 									<a>IQ Extend</a>
-								</Link>
-							</ListItemText>
-						</ListItem>
-						<ListItem button className={classes.nested}>
-							<ListItemText>
-								<Link href="/software/iq-further">
+								</ListItemText>
+							</ListItem>
+						</Link>
+						<Link href="/software/iq-further">
+							<ListItem button className={classes.nested}>
+								<ListItemText>
 									<a>IQ Further</a>
-								</Link>
-							</ListItemText>
-						</ListItem>
+								</ListItemText>
+							</ListItem>
+						</Link>
 					</List>
 				</Collapse>
 				<ListItem>
