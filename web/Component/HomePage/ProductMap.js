@@ -133,7 +133,7 @@ const styles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("md")]: {
 			borderRadius: "10px",
-			padding: "1.5rem 0",
+			padding: "1.5rem 1rem",
 			border: 0,
 			cursor: "pointer",
 			background: "rgb(55, 158, 50)",

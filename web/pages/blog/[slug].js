@@ -26,7 +26,7 @@ function BlogPostPage(props) {
 				<Alert severity="success">
 					Why not make the software you already have more powerful? –{" "}
 					<Link href="/book-a-demo">
-						<a>
+						<a target="_blank">
 							<i>Let’s talk!</i>
 						</a>
 					</Link>

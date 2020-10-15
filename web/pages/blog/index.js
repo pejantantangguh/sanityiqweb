@@ -15,7 +15,7 @@ function BlogList(props) {
 						return (
 							<li key={blog.id}>
 								<Link href={`/blog/${blog.slug}`}>
-									<a>{blog.title}</a>
+									<a target="_blank">{blog.title}</a>
 								</Link>
 							</li>
 						);

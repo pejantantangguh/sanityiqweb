@@ -140,7 +140,7 @@ function TechPage() {
 					or book a demo&nbsp;
 					<strong>
 						<Link href="/book-a-demo">
-							<a>here!</a>
+							<a target="_blank">here!</a>
 						</Link>
 					</strong>
 				</Alert>

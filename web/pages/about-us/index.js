@@ -172,7 +172,7 @@ const AboutUs = () => {
 			</Container>
 			<Container>
 				<Link href="/about-us/who-we-are">
-					<a>
+					<a target="_blank">
 						<Button className={classes.green} variant="contained" type="submit">
 							Meet our team!
 						</Button>

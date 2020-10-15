@@ -32,7 +32,7 @@ const styles = makeStyles((theme) => ({
 			display: "flex",
 			flexDirection: "column",
 			position: "relative",
-			height: "100vh",
+			height: "75vh",
 		},
 		[theme.breakpoints.down("xs")]: {
 			display: "flex",
@@ -142,13 +142,13 @@ function MilkyWay() {
 						segment.
 					</Typography>
 				</Box>
-				<Box component="button" className={classes.buttonMilk}>
-					<Typography component="span" className={classes.buttonText}>
-						<Link href="/book-a-demo">
+				<Link href="/book-a-demo">
+					<Box component="button" className={classes.buttonMilk}>
+						<Typography component="span" className={classes.buttonText}>
 							<a>Find Out more</a>
-						</Link>
-					</Typography>
-				</Box>
+						</Typography>
+					</Box>
+				</Link>
 			</div>
 		</div>
 	);

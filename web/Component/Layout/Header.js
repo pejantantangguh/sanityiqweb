@@ -46,7 +46,7 @@ function Header() {
 				<MenuContent />
 				<Box justifyContent="center">
 					<Link href="/">
-						<a>
+						<a target="_blank">
 							<img
 								src={require("../../public/images/logo/printIQ-logo.png")}
 								type="image/jpeg"
@@ -58,7 +58,7 @@ function Header() {
 				</Box>
 				<Box justifyContent="flex-end">
 					<Link href="/book-a-demo">
-						<a>
+						<a target="_blank">
 							<Button className={classes.button}>Book a Demo</Button>
 						</a>
 					</Link>

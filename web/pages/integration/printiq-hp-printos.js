@@ -87,7 +87,7 @@ function iqPrintOs() {
 					</AlertTitle>
 					<strong>
 						<Link href="/book-a-demo">
-							<a>Book a demo</a>
+							<a target="_blank">Book a demo</a>
 						</Link>
 					</strong>{" "}
 					with us. Our specialist will reach out to you and explain more about
@@ -97,7 +97,7 @@ function iqPrintOs() {
 					</a>{" "}
 					or click{" "}
 					<Link href="/book-a-demo">
-						<a>
+						<a target="_blank">
 							<strong>here!</strong>
 						</a>
 					</Link>

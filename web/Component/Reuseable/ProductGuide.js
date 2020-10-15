@@ -31,7 +31,7 @@ function ProductGuide() {
 		<Grid container spacing={3} className={classes.box}>
 			<Grid item xs={12} sm={6}>
 				<Link href="/pdf/whitepaper/PIQ_8pp_Core_Brochure_A4.pdf">
-					<a>
+					<a target="_blank">
 						<Button variant="contained" className={classes.rainbowText}>
 							Product Guide(A4)
 						</Button>
@@ -40,7 +40,7 @@ function ProductGuide() {
 			</Grid>
 			<Grid item xs={12} sm={6}>
 				<Link href="/pdf/whitepaper/PIQ_8pp_Core_Brochure_USLetter.pdf">
-					<a>
+					<a target="_blank">
 						<Button variant="contained" className={classes.rainbowText}>
 							Product Guide(Letter)
 						</Button>

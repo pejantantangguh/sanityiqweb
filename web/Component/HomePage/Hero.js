@@ -47,7 +47,6 @@ const styles = makeStyles((theme) => ({
 			zIndex: "9999",
 			textAlign: "center",
 			display: "flex",
-			maxWidth: "1500px",
 			padding: "45% 10%",
 		},
 		[theme.breakpoints.down("xs")]: {
@@ -103,8 +102,8 @@ const styles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("md")]: {
 			position: "absolute",
-			bottom: "-10px",
-			width: "120px",
+			bottom: "-100px",
+			width: "280px",
 			left: 0,
 			zIndex: 30,
 		},
@@ -123,10 +122,10 @@ const styles = makeStyles((theme) => ({
 		},
 		[theme.breakpoints.down("md")]: {
 			position: "absolute",
-			bottom: "-10px",
-			width: "235px",
+			bottom: "-100px",
+			width: "500px",
 			right: 0,
-			zIndex: "-20",
+			display: "none",
 		},
 		[theme.breakpoints.down("xs")]: {
 			display: "none",
@@ -135,16 +134,15 @@ const styles = makeStyles((theme) => ({
 	bigBottomRight: {
 		[theme.breakpoints.up("lg")]: {
 			position: "absolute",
-			width: "400px",
+			width: "600px",
 			right: 0,
-			zIndex: 30,
 			gridRow: 2,
 			bottom: "-10px",
 		},
 		[theme.breakpoints.down("md")]: {
 			position: "absolute",
-			bottom: "-10px",
-			width: "250px",
+			bottom: "-100px",
+			width: "700px",
 			right: 0,
 			zIndex: "20",
 		},

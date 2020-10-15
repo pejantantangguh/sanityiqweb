@@ -54,7 +54,7 @@ function MenuList() {
 					</ListItemIcon>
 					<ListItemText>
 						<Link href="/">
-							<a>Home</a>
+							<a target="_blank">Home</a>
 						</Link>
 					</ListItemText>
 				</ListItem>
@@ -64,7 +64,7 @@ function MenuList() {
 					</ListItemIcon>
 					<ListItemText>
 						<Link href="/contact-us">
-							<a>Contact Us</a>
+							<a target="_blank">Contact Us</a>
 						</Link>
 					</ListItemText>
 				</ListItem>
@@ -74,7 +74,7 @@ function MenuList() {
 					</ListItemIcon>
 					<ListItemText>
 						<Link href="/book-a-demo">
-							<a>Book a demo</a>
+							<a target="_blank">Book a demo</a>
 						</Link>
 					</ListItemText>
 				</ListItem>
@@ -90,35 +90,35 @@ function MenuList() {
 						<Link href="/software/iq-core">
 							<ListItem button className={classes.nested}>
 								<ListItemText>
-									<a>IQ Core</a>
+									<a target="_blank">IQ Core</a>
 								</ListItemText>
 							</ListItem>
 						</Link>
 						<Link href="/software/iq-connect">
 							<ListItem button className={classes.nested}>
 								<ListItemText>
-									<a>IQ Connect</a>
+									<a target="_blank">IQ Connect</a>
 								</ListItemText>
 							</ListItem>
 						</Link>
 						<Link href="/software/iq-plus">
 							<ListItem button className={classes.nested}>
 								<ListItemText>
-									<a>IQ Plus</a>
+									<a target="_blank">IQ Plus</a>
 								</ListItemText>
 							</ListItem>
 						</Link>
 						<Link href="/software/iq-extend">
 							<ListItem button className={classes.nested}>
 								<ListItemText>
-									<a>IQ Extend</a>
+									<a target="_blank">IQ Extend</a>
 								</ListItemText>
 							</ListItem>
 						</Link>
 						<Link href="/software/iq-further">
 							<ListItem button className={classes.nested}>
 								<ListItemText>
-									<a>IQ Further</a>
+									<a target="_blank">IQ Further</a>
 								</ListItemText>
 							</ListItem>
 						</Link>
@@ -130,7 +130,7 @@ function MenuList() {
 					</ListItemIcon>
 					<ListItemText>
 						<Link href="/whitepaper">
-							<a>Whitepaper</a>
+							<a target="_blank">Whitepaper</a>
 						</Link>
 					</ListItemText>
 				</ListItem>
@@ -140,7 +140,7 @@ function MenuList() {
 					</ListItemIcon>
 					<ListItemText>
 						<Link href="/tech">
-							<a>Tech</a>
+							<a target="_blank">Tech</a>
 						</Link>
 					</ListItemText>
 				</ListItem>
@@ -150,7 +150,7 @@ function MenuList() {
 					</ListItemIcon>
 					<ListItemText>
 						<Link href="/about-us">
-							<a>About Us</a>
+							<a target="_blank">About Us</a>
 						</Link>
 					</ListItemText>
 				</ListItem>
@@ -160,7 +160,7 @@ function MenuList() {
 					</ListItemIcon>
 					<ListItemText>
 						<Link href="/about-us/who-we-are">
-							<a>Meet our team</a>
+							<a target="_blank">Meet our team</a>
 						</Link>
 					</ListItemText>
 				</ListItem>
