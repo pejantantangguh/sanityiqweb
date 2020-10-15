@@ -9,7 +9,7 @@ const styles = makeStyles((theme) => ({
 		[theme.breakpoints.up("lg")]: {
 			display: "grid",
 			gridTemplateColumns: "repeat(4,1fr)",
-			height: "100%",
+			height: "100vh",
 			maxWidth: "1500px",
 			margin: "auto",
 			position: "relative",
@@ -61,7 +61,7 @@ const styles = makeStyles((theme) => ({
 	clientName: {
 		fontWeight: 600,
 		[theme.breakpoints.up("lg")]: {
-			fontSize: "40px",
+			fontSize: "38px",
 			margin: "0",
 		},
 		[theme.breakpoints.down("md")]: {
@@ -85,10 +85,13 @@ const styles = makeStyles((theme) => ({
 const CardCustom = styled.div`
 	text-align: center;
 	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1);
-	height: 55vh !important;
+	height: 70vh !important;
 	margin: 50px 35px;
 	background: white;
 	border-radius: 20px;
+	@media (max-width: 1279px) {
+		height: 55vh !important;
+	}
 `;
 const Image = styled.img`
 	border-radius: 40px;

@@ -46,7 +46,7 @@ const styles = makeStyles((theme) => ({
 		[theme.breakpoints.up("lg")]: {
 			gridColumn: "1 / span 4",
 			color: "#fff",
-			margin: "10% 20% 8% 20%",
+			margin: "5% 20%",
 		},
 		[theme.breakpoints.down("md")]: {
 			margin: "140px 50px 50px 50px",
@@ -145,7 +145,7 @@ function MilkyWay() {
 				<Link href="/book-a-demo">
 					<Box component="button" className={classes.buttonMilk}>
 						<Typography component="span" className={classes.buttonText}>
-							<a>Find Out more</a>
+							<a target="_blank">Find Out more</a>
 						</Typography>
 					</Box>
 				</Link>

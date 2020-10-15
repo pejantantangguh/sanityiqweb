@@ -306,15 +306,13 @@ function MemberAvatar() {
 				</Grid>
 				{director.map((user, index) => (
 					<Grid item xs={12} sm={4} key={index}>
-						<Card>
-							<img src={user.imageURL} />
-							<CardContent>
-								<Typography gutterBottom variant="h5" component="h2">
-									{user.name}
-								</Typography>
-								<Typography>{user.position}</Typography>
-							</CardContent>
-						</Card>
+						<img src={user.imageURL} />
+						<CardContent>
+							<Typography gutterBottom variant="h5" component="h2">
+								{user.name}
+							</Typography>
+							<Typography>{user.position}</Typography>
+						</CardContent>
 					</Grid>
 				))}
 
@@ -323,15 +321,13 @@ function MemberAvatar() {
 				</Grid>
 				{teamMember.map((user, index) => (
 					<Grid item xs={12} sm={4} key={index}>
-						<Card>
-							<img src={user.imageURL} />
-							<CardContent>
-								<Typography gutterBottom variant="h5" component="h2">
-									{user.name}
-								</Typography>
-								<Typography>{user.position}</Typography>
-							</CardContent>
-						</Card>
+						<img src={user.imageURL} />
+						<CardContent>
+							<Typography gutterBottom variant="h5" component="h2">
+								{user.name}
+							</Typography>
+							<Typography>{user.position}</Typography>
+						</CardContent>
 					</Grid>
 				))}
 			</Grid>

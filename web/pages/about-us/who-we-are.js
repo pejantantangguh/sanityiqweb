@@ -16,7 +16,7 @@ const styles = makeStyles((theme) => ({
 	},
 	centerAlign: {
 		textAlign: "center",
-		color: "#fff",
+		color: "#000",
 	},
 }));
 
@@ -69,13 +69,13 @@ function whoWeAre() {
 						team that are not only accessible but are focused on delivering
 						customizations to our core product.
 					</Typography>
-					<Typography variant="h6" component="p" gutterBottom={true}>
+					{/* <Typography variant="h6" component="p" gutterBottom={true}>
 						In fact, we are increasingly one of the only companies that is in a
 						position to deliver custom requirements to the printing industries.
 						When you combine a comprehensive off the shelf MWS with custom
 						software development skills, and print industry experts, our
 						dedicated solutions can only deliver exceptional results.
-					</Typography>
+					</Typography> */}
 				</Container>
 			</div>
 			<Container>
