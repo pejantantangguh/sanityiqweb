@@ -58,26 +58,6 @@ function MenuList() {
 						</Link>
 					</ListItemText>
 				</ListItem>
-				<ListItem>
-					<ListItemIcon>
-						<ContactMailIcon />
-					</ListItemIcon>
-					<ListItemText>
-						<Link href="/contact-us">
-							<a target="_blank">Contact Us</a>
-						</Link>
-					</ListItemText>
-				</ListItem>
-				<ListItem>
-					<ListItemIcon>
-						<DuoIcon />
-					</ListItemIcon>
-					<ListItemText>
-						<Link href="/book-a-demo">
-							<a target="_blank">Book a demo</a>
-						</Link>
-					</ListItemText>
-				</ListItem>
 				<ListItem button onClick={handleClick}>
 					<ListItemIcon>
 						<ComputerIcon />
@@ -124,6 +104,27 @@ function MenuList() {
 						</Link>
 					</List>
 				</Collapse>
+				<ListItem>
+					<ListItemIcon>
+						<ContactMailIcon />
+					</ListItemIcon>
+					<ListItemText>
+						<Link href="/contact-us">
+							<a target="_blank">Contact Us</a>
+						</Link>
+					</ListItemText>
+				</ListItem>
+				<ListItem>
+					<ListItemIcon>
+						<DuoIcon />
+					</ListItemIcon>
+					<ListItemText>
+						<Link href="/book-a-demo">
+							<a target="_blank">Book a demo</a>
+						</Link>
+					</ListItemText>
+				</ListItem>
+
 				<ListItem>
 					<ListItemIcon>
 						<DescriptionIcon />

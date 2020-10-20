@@ -37,7 +37,7 @@ export default function MyApp(props) {
 				<CssBaseline />
 				<Layout>
 					<Component {...pageProps} />
-					<Button onClick={() => router.back()}> Click here to go back</Button>
+					{/* <Button onClick={() => router.back()}> Click here to go back</Button> */}
 				</Layout>
 			</ThemeProvider>
 		</React.Fragment>
