@@ -33,7 +33,7 @@ function CoreHero() {
 					</Grid>
 					<Grid item xs={12} sm={6}>
 						<Typography variant="h3" component="h1">
-							IQ Core
+							IQcore
 						</Typography>
 						<Typography variant="body1" component="p" gutterBottom={true}>
 							The printIQ Core is made up of 8 modules that create a seamless,

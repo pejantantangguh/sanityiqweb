@@ -42,7 +42,7 @@ const HeaderStyles = makeStyles((theme) => ({
 function Header() {
 	const classes = HeaderStyles();
 	return (
-		<AppBar position="sticky" color="transparent">
+		<AppBar position="sticky" color="inherit">
 			<Toolbar style={{ justifyContent: "space-between" }}>
 				<MenuContent />
 				<Box justifyContent="center">

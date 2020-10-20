@@ -186,7 +186,7 @@ function ProductMap() {
 			<Box component="section" className={classes.productInfo}>
 				<Typography variant="h3" className={classes.productInfoCopy}>
 					printIQ is everything you'll ever need for
-					<span className={classes.textGreen}> your future is print</span>
+					<span className={classes.textGreen}> your future in print</span>
 				</Typography>
 				<ul className={classes.futurePrintBullet}>
 					<li>Customer Portal for online quoting, ordering and tracking</li>

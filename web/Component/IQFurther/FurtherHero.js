@@ -33,7 +33,7 @@ function CoreHero() {
 					</Grid>
 					<Grid item xs={12} sm={6}>
 						<Typography variant="h3" component="h1">
-							IQ Further
+							IQfurther
 						</Typography>
 						<Typography variant="body1" component="p" gutterBottom={true}>
 							The Further range will help you take the next step with your

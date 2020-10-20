@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import "normalize.css";
 import "../stylesheet/styles.css";
 import { ThemeProvider } from "@material-ui/core/styles";
@@ -9,6 +10,7 @@ import theme from "../theme.js";
 import SEO from "../next-seo.config";
 import { DefaultSeo } from "next-seo";
 import Layout from "../Component/Layout/Layout";
+import { Button } from "@material-ui/core";
 
 export default function MyApp(props) {
 	const { Component, pageProps } = props;
@@ -20,7 +22,7 @@ export default function MyApp(props) {
 			jssStyles.parentElement.removeChild(jssStyles);
 		}
 	}, []);
-
+	const router = useRouter();
 	return (
 		<React.Fragment>
 			<Head>
@@ -35,6 +37,7 @@ export default function MyApp(props) {
 				<CssBaseline />
 				<Layout>
 					<Component {...pageProps} />
+					<Button onClick={() => router.back()}> Click here to go back</Button>
 				</Layout>
 			</ThemeProvider>
 		</React.Fragment>

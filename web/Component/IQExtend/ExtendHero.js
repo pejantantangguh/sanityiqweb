@@ -33,7 +33,7 @@ function CoreHero() {
 					</Grid>
 					<Grid item xs={12} sm={6}>
 						<Typography variant="h3" component="h1">
-							IQ Extend
+							IQextend
 						</Typography>
 						<Typography variant="body1" component="p" gutterBottom={true}>
 							We can also include options to add another internal site, a second

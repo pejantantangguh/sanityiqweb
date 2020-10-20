@@ -1,28 +1,25 @@
-// file: pages/blog/[slug].js
+// file: pages/segment/[slug].js
 import { Container, Box, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
+import { useRouter } from "next/router";
 import { NextSeo } from "next-seo";
 import Link from "next/link";
 import { Alert, AlertTitle } from "@material-ui/lab";
 
-const styles = makeStyles((theme) => ({
-	box: {
-		margin: "15px auto",
-		textAlign: "center",
-	},
-}));
-
-function BlogPostPage(props) {
-	const classes = styles();
+function SegmentPagePost(props) {
 	return (
 		<>
-			<NextSeo title={props.blog.title} description={props.blog.SeoDesc} />
+			<NextSeo
+				title={props.segment.title}
+				description={props.segment.SeoDesc}
+			/>
 			<Container>
-				<h1>{props.blog.title}</h1>
+				<Typography variant="h4" component="h1">
+					{props.segment.title}
+				</Typography>
 				<section
-					dangerouslySetInnerHTML={{ __html: props.blog.content }}
+					dangerouslySetInnerHTML={{ __html: props.segment.content }}
 				></section>
-				<p>{props.blog.date}</p>
 				<Alert severity="success">
 					Why not make the software you already have more powerful? –{" "}
 					<Link href="/book-a-demo">
@@ -35,8 +32,7 @@ function BlogPostPage(props) {
 		</>
 	);
 }
-
-// pass props to BlogPostPage component
+// pass props to SegmentPagePost component
 export async function getStaticProps(context) {
 	const fs = require("fs");
 	const html = require("remark-html");
@@ -46,24 +42,25 @@ export async function getStaticProps(context) {
 	const matter = require("gray-matter");
 
 	const slug = context.params.slug; // get slug from params
-	const path = `${process.cwd()}/_contents/${slug}.md`;
+	const path = `${process.cwd()}/_segments/${slug}.md`;
 
-	// read file content and store into rawContent variable
+	// Read file content and store into raw content variable
 	const rawContent = fs.readFileSync(path, {
 		encoding: "utf-8",
 	});
 
-	const { data, content } = matter(rawContent); // pass rawContent to gray-matter to get data and content
+	const { data, content } = matter(rawContent);
+	// pass rawContent to gray-matter to get data and content
 
 	const result = await unified()
 		.use(markdown)
-		.use(highlight) // highlight code block
+		.use(highlight)
 		.use(html)
-		.process(content); // pass content to process
+		.process(content);
 
 	return {
 		props: {
-			blog: {
+			segment: {
 				...data,
 				content: result.toString(),
 			},
@@ -75,9 +72,8 @@ export async function getStaticProps(context) {
 export async function getStaticPaths(context) {
 	const fs = require("fs");
 
-	const path = `${process.cwd()}/_contents`;
+	const path = `${process.cwd()}/_segments`;
 	const files = fs.readdirSync(path, "utf-8");
-
 	const markdownFileNames = files
 		.filter((fn) => fn.endsWith(".md"))
 		.map((fn) => fn.replace(".md", ""));
@@ -94,4 +90,4 @@ export async function getStaticPaths(context) {
 	};
 }
 
-export default BlogPostPage;
+export default SegmentPagePost;

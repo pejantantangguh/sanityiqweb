@@ -33,7 +33,7 @@ function PlusHero() {
 					</Grid>
 					<Grid item xs={12} sm={6}>
 						<Typography variant="h3" component="h1">
-							IQ Plus
+							IQplus
 						</Typography>
 						<Typography variant="body1" component="p" gutterBottom={true}>
 							The IQplus range offers two additions to the Core: Approve for

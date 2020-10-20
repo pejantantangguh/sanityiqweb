@@ -69,7 +69,7 @@ const styles = makeStyles((theme) => ({
 		},
 	},
 	segmentCard: {
-		margin: "25px",
+		margin: "10px",
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
@@ -122,9 +122,8 @@ const styles = makeStyles((theme) => ({
 	cardCopy: {
 		[theme.breakpoints.up("lg")]: {
 			margin: "2px 1em",
-			lineHeight: "1.2em",
-			fontSize: "1.2em",
-			fontWeight: "600",
+			lineHeight: "1.4rem",
+			fontWeight: "400",
 		},
 	},
 	sectionButton: {
@@ -203,6 +202,9 @@ function FutureOfPrint() {
 				<Typography variant="body1" className={classes.cardCopy}>
 					With dedicated workflows and streamlined job management tools, printIQ
 					is the perfect match for your digital print business.
+					<Link href="/segment/digital">
+						<a>Read More...</a>
+					</Link>
 				</Typography>
 			</Box>
 			<Box component="section" className={classes.segmentCard}>
@@ -217,6 +219,9 @@ function FutureOfPrint() {
 				<Typography variant="body1" className={classes.cardCopy}>
 					The printIQ MWS understands the unique flexo requirements, from
 					die‑cutting, through to hot foils, and all the substrates you manage.
+					<Link href="/segment/flexo">
+						<a>Read More...</a>
+					</Link>
 				</Typography>
 			</Box>
 			<Box component="section" className={classes.segmentCard}>
@@ -232,6 +237,9 @@ function FutureOfPrint() {
 					printIQ has been developed to handle the fulfillment process, from
 					receiving, storage, and order processing, through to pick & pack, and
 					shipping.
+					<Link href="/segment/fulfilment">
+						<a>Read More...</a>
+					</Link>
 				</Typography>
 			</Box>
 			<Box component="section" className={classes.segmentCard}>
@@ -246,6 +254,9 @@ function FutureOfPrint() {
 				<Typography variant="body1" className={classes.cardCopy}>
 					With a searchable die library, advanced imposition control, and custom
 					size and shape calculators, printIQ is a perfect fit for labels.
+					<Link href="/segment/labels">
+						<a>Read More...</a>
+					</Link>
 				</Typography>
 			</Box>
 			<Box component="section" className={classes.segmentCard}>
@@ -261,6 +272,9 @@ function FutureOfPrint() {
 					Solve your estimating turnaround problem, take your commercial print
 					business online and take the leap into being an efficient, modern
 					print company.
+					<Link href="/segment/offset">
+						<a>Read More...</a>
+					</Link>
 				</Typography>
 			</Box>
 			<Box component="section" className={classes.segmentCard}>
@@ -275,6 +289,9 @@ function FutureOfPrint() {
 				<Typography variant="body1" className={classes.cardCopy}>
 					With printIQ you get a product that understands the packaging workflow
 					rather than a print MIS trying to move into a new segment.
+					<Link href="/segment/packaging">
+						<a>Read More...</a>
+					</Link>
 				</Typography>
 			</Box>
 			<Box component="section" className={classes.segmentCard}>
@@ -290,6 +307,9 @@ function FutureOfPrint() {
 					A manufacturing ERP that might cope with print or a print MIS that can
 					handle a little manufacturing? What if we told you that printIQ does
 					both?
+					<Link href="/segment/signage">
+						<a>Read More...</a>
+					</Link>
 				</Typography>
 			</Box>
 			<Box component="section" className={classes.segmentCard}>
@@ -305,6 +325,9 @@ function FutureOfPrint() {
 					We’ve added dedicated pricing functionality to cope with everything
 					sheet & roll fed so that printIQ is in a perfect position to support
 					your business.
+					<Link href="/segment/widerformat">
+						<a>Read More...</a>
+					</Link>
 				</Typography>
 			</Box>
 			<Box component="section" className={classes.sectionButton}>

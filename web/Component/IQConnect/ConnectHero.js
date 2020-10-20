@@ -32,7 +32,7 @@ function ConnectHero() {
 					</Grid>
 					<Grid item xs={12} sm={6}>
 						<Typography variant="h3" component="h1">
-							IQ connect
+							IQconnect
 						</Typography>
 						<Typography variant="body1" component="h2" gutterBottom={true}>
 							As an extension to the printIQ Core, we offer our Connect Modules,
