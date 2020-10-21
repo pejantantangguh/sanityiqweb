@@ -1,9 +1,12 @@
 {
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.acceptSuggestionOnEnter": "smart",
-  "javascript.format.semicolons": "insert",
-  "typescript.format.semicolons": "insert",
-  "javascript.preferences.quoteStyle": "double"
+	"editor.formatOnSave": true,
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"editor.acceptSuggestionOnEnter": "smart",
+	"javascript.format.semicolons": "insert",
+	"typescript.format.semicolons": "insert",
+	"javascript.preferences.quoteStyle": "double",
+	"files.associations": {
+		"*.md": "mdx"
+	}
 }

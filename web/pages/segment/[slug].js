@@ -42,7 +42,7 @@ export async function getStaticProps(context) {
 	const matter = require("gray-matter");
 
 	const slug = context.params.slug; // get slug from params
-	const path = `${process.cwd()}/_segments/${slug}.md`;
+	const path = `${process.cwd()}/_segments/${slug}.mdx`;
 
 	// Read file content and store into raw content variable
 	const rawContent = fs.readFileSync(path, {
@@ -75,8 +75,8 @@ export async function getStaticPaths(context) {
 	const path = `${process.cwd()}/_segments`;
 	const files = fs.readdirSync(path, "utf-8");
 	const markdownFileNames = files
-		.filter((fn) => fn.endsWith(".md"))
-		.map((fn) => fn.replace(".md", ""));
+		.filter((fn) => fn.endsWith(".mdx"))
+		.map((fn) => fn.replace(".mdx", ""));
 
 	return {
 		paths: markdownFileNames.map((fileName) => {
