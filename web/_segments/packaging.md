@@ -5,6 +5,12 @@ date:
 SeoDesc: We take a manufacturing approach to give you the control and flexibility to cater for 3 dimensional finished sizes, sourcing offshore product, sea and road freight, internal transfer margins, storage and financing costs. With printIQ you get a product that understands the packaging workflow rather than a print MIS trying to move into a new segment.
 ---
 
+<style>
+    h3 {
+      color: green;
+    }
+</style>
+
 ### Our Promise
 
 In packaging, not everything is focused on the press, in some cases, there is no printing at all. However, the process is still a mix of machinery, materials and labour, it’s just that it may not be done on a printing press. Whether you’re producing from a roll, slitting or sheeting the roll first, running roll to roll, or manufacturing directly from sheets, printIQ understands the manufacturing process end to end.

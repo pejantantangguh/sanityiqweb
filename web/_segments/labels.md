@@ -5,6 +5,12 @@ date:
 SeoDesc: You might be using a web-fed rotary press, or perhaps the latest Digital Press, it really doesn’t matter because printIQ can manage all your label work – straight out of the box. From quotes and production through to storage and shipping, printIQ has you covered.
 ---
 
+<style>
+    h3 {
+      color: green;
+    }
+</style>
+
 ### Our Promise
 
 We’ve custom designed and developed printIQ to handle labels, from our advanced visual die library, with dynamic search functionality, to the 20‑configurable component references that you can add to suit your specific ordering process. With printIQ there are no half measures, if we’re going to do it then we’ll do it right.

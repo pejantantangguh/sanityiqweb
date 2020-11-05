@@ -65,7 +65,9 @@ export default function StickyFooter() {
 				<Container>
 					<Grid container spacing={6}>
 						<Grid item xs={12} sm={6} lg={6}>
-							<h3>Explore </h3>
+							<Typography variant="h5" component="h3">
+								Explore
+							</Typography>
 							<ul className={classes.footerNav}>
 								<li className={classes.navItem}>
 									<Link href="/about-us">
@@ -90,7 +92,9 @@ export default function StickyFooter() {
 							</ul>
 						</Grid>
 						<Grid item xs={12} sm={6}>
-							<h3>Follow Us</h3>
+							<Typography variant="h5" component="h3">
+								Follow Us
+							</Typography>
 							<ul className={classes.footerNav}>
 								<li className={classes.navItem}>
 									<Link href="https://www.facebook.com/printIQ">

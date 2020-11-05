@@ -5,6 +5,12 @@ date:
 SeoDesc: Competition is fiercer than ever before. Your customers expect their product at a great price, with fast delivery and low cost. They need visibility of their order (in real time) from start to finish of the process, whilst demanding accurate information on stock levels and holdings
 ---
 
+<style>
+    h3 {
+      color: green;
+    }
+</style>
+
 ### Our Promise
 
 We’ve custom designed and developed printIQ to handle the fulfilment process, from receiving, storage, and order processing, through to pick & pack, and shipping. With printIQ there’s no half measures, if we’re going to do it then we’ll do it right.

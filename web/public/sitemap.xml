@@ -41,7 +41,39 @@
   </url>
 
   <url>
-    <loc>https://printiq.com/segment/</loc>
+    <loc>https://printiq.com/segment/digital</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/segment/flexo</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/segment/fulfillment</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/segment/index</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/segment/labels</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/segment/offset</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/segment/packaging</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/segment/signage</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/segment/wideFormat</loc>
   </url>
 
   <url>
@@ -102,6 +134,10 @@
 
   <url>
     <loc>https://printiq.com/whitepaper/index</loc>
+  </url>
+
+  <url>
+    <loc>https://printiq.com/____segment/</loc>
   </url>
 
   <url>

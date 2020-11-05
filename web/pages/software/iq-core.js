@@ -56,7 +56,7 @@ function IqCore() {
 						</Typography>
 						{data.benefits.length > 1 ? (
 							<Typography>
-								<strong>The Benefits</strong>{" "}
+								<strong>The Benefits</strong>
 								<ul>
 									{data.benefits.map((moduleBenefits) => (
 										<li key={moduleBenefits.id}>{moduleBenefits.name}</li>

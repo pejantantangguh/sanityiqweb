@@ -1,4 +1,4 @@
-import { Container } from "@material-ui/core";
+import { Container, Typography } from "@material-ui/core";
 import Hero from "../../Component/Reuseable/Hero";
 
 const Location = () => {
@@ -11,6 +11,7 @@ const Location = () => {
 					p2content="Please contact us to see for yourself why customers across the globe trust printIQ to run their business, increase their profits, and reduce their costs. With printIQ you get far more than just an MIS."
 					p3content="Why not arrange a demo for an upcoming show, meet some of the team, and see the future of print in action?"
 				/>
+				<Typography variant="body1">Hello World</Typography>
 			</Container>
 		</>
 	);

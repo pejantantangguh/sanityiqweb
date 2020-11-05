@@ -5,6 +5,12 @@ date:
 SeoDesc: It’s a changing market, new equipment, new methods, and new materials to print on, but you’re still stuck with the same old software that hasn’t moved with the industry. We’ve actively targeted wide format and textile printers so that printIQ is in a perfect position to support your business in today’s market.
 ---
 
+<style>
+    h3 {
+      color: green;
+    }
+</style>
+
 ### Pricing
 
 We fully understand that an offset solution doesn’t fit in a wide format business. For this reason, we have added dedicated pricing functionality to cope with everything roll fed. We’re in the unique position of being able to support your pricing model while everyone else is forcing you to adapt it to suit the limitations of their software.

@@ -6,6 +6,12 @@ import { NextSeo } from "next-seo";
 import Link from "next/link";
 import { Alert, AlertTitle } from "@material-ui/lab";
 
+const styleObject = {
+	h3: {
+		color: "green",
+	},
+};
+
 function SegmentPagePost(props) {
 	return (
 		<>
@@ -17,9 +23,15 @@ function SegmentPagePost(props) {
 				<Typography variant="h4" component="h1">
 					{props.segment.title}
 				</Typography>
-				<section
+				<Box
 					dangerouslySetInnerHTML={{ __html: props.segment.content }}
-				></section>
+					style={styleObject}
+				></Box>
+				<style jsx>{`
+					h3: {
+						color: green;
+					}
+				`}</style>
 				<Alert severity="success">
 					Why not make the software you already have more powerful? –{" "}
 					<Link href="/book-a-demo">
@@ -42,7 +54,7 @@ export async function getStaticProps(context) {
 	const matter = require("gray-matter");
 
 	const slug = context.params.slug; // get slug from params
-	const path = `${process.cwd()}/_segments/${slug}.mdx`;
+	const path = `${process.cwd()}/_segments/${slug}.md`;
 
 	// Read file content and store into raw content variable
 	const rawContent = fs.readFileSync(path, {
@@ -75,8 +87,8 @@ export async function getStaticPaths(context) {
 	const path = `${process.cwd()}/_segments`;
 	const files = fs.readdirSync(path, "utf-8");
 	const markdownFileNames = files
-		.filter((fn) => fn.endsWith(".mdx"))
-		.map((fn) => fn.replace(".mdx", ""));
+		.filter((fn) => fn.endsWith(".md"))
+		.map((fn) => fn.replace(".md", ""));
 
 	return {
 		paths: markdownFileNames.map((fileName) => {

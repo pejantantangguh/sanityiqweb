@@ -5,6 +5,12 @@ date:
 SeoDesc: You might ask yourself, “Do I look for a manufacturing ERP that might cope with print or do I go for a print MIS that can handle a little manufacturing?” What if we told you that printIQ is built to do both.
 ---
 
+<style>
+    h3 {
+      color: green;
+    }
+</style>
+
 In a business where print only makes up 30% of the sale, it’s critical that your MIS can extend beyond the press. printIQ is an MWS (Management Workflow System) built for a manufacturing environment and therefore understands your sewing, curing, fabrication and installation processes. Add to that our wide format / textile print capabilities and you have a powerful combination.
 
 ### Pricing
