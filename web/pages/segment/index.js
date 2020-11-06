@@ -7,7 +7,9 @@ import {
 	makeStyles,
 	Button,
 	Paper,
+	Box,
 } from "@material-ui/core";
+import { NextSeo } from "next-seo";
 
 const segmentImage = require("../../public/images/print-house-min.jpg");
 
@@ -44,6 +46,7 @@ function Segment(props) {
 	const classes = styles();
 	return (
 		<>
+			<NextSeo title="Segment Page" />
 			<Container>
 				<Grid container justify="center" alignItems="center" spacing={3}>
 					<Grid item sm={6}>
@@ -71,48 +74,50 @@ function Segment(props) {
 						/>
 					</Grid>
 				</Grid>
-				<Grid container spacing={3}>
-					<Grid item lg={3}>
-						<Paper elevation={4} className={classes.paper}>
-							Digital
-						</Paper>
+				<Box my={5}>
+					<Grid container spacing={3}>
+						<Grid item lg={3}>
+							<Paper elevation={4} className={classes.paper}>
+								Digital
+							</Paper>
+						</Grid>
+						<Grid item lg={3}>
+							<Paper elevation={4} className={classes.paper}>
+								Flexo
+							</Paper>
+						</Grid>
+						<Grid item lg={3}>
+							<Paper elevation={4} className={classes.paper}>
+								Fulfillment
+							</Paper>
+						</Grid>
+						<Grid item lg={3}>
+							<Paper elevation={4} className={classes.paper}>
+								Labels
+							</Paper>
+						</Grid>
+						<Grid item lg={3}>
+							<Paper elevation={4} className={classes.paper}>
+								Offset
+							</Paper>
+						</Grid>
+						<Grid item lg={3}>
+							<Paper elevation={4} className={classes.paper}>
+								Packaging
+							</Paper>
+						</Grid>
+						<Grid item lg={3}>
+							<Paper elevation={4} className={classes.paper}>
+								Signage
+							</Paper>
+						</Grid>
+						<Grid item lg={3}>
+							<Paper elevation={4} className={classes.paper}>
+								Wide Format
+							</Paper>
+						</Grid>
 					</Grid>
-					<Grid item lg={3}>
-						<Paper elevation={4} className={classes.paper}>
-							Flexo
-						</Paper>
-					</Grid>
-					<Grid item lg={3}>
-						<Paper elevation={4} className={classes.paper}>
-							Fulfillment
-						</Paper>
-					</Grid>
-					<Grid item lg={3}>
-						<Paper elevation={4} className={classes.paper}>
-							Labels
-						</Paper>
-					</Grid>
-					<Grid item lg={3}>
-						<Paper elevation={4} className={classes.paper}>
-							Offset
-						</Paper>
-					</Grid>
-					<Grid item lg={3}>
-						<Paper elevation={4} className={classes.paper}>
-							Packaging
-						</Paper>
-					</Grid>
-					<Grid item lg={3}>
-						<Paper elevation={4} className={classes.paper}>
-							Signage
-						</Paper>
-					</Grid>
-					<Grid item lg={3}>
-						<Paper elevation={4} className={classes.paper}>
-							Wide Format
-						</Paper>
-					</Grid>
-				</Grid>
+				</Box>
 			</Container>
 		</>
 	);

@@ -23,6 +23,7 @@ import DescriptionIcon from "@material-ui/icons/Description";
 import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
 import InfoIcon from "@material-ui/icons/Info";
 import PeopleIcon from "@material-ui/icons/People";
+import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 
 //To Do Active Link when visited page
 
@@ -104,6 +105,16 @@ function MenuList() {
 						</Link>
 					</List>
 				</Collapse>
+				<ListItem>
+					<ListItemIcon>
+						<MonetizationOnIcon />
+					</ListItemIcon>
+					<ListItemText>
+						<Link href="/segment">
+							<a target="_blank">Segment</a>
+						</Link>
+					</ListItemText>
+				</ListItem>
 				<ListItem>
 					<ListItemIcon>
 						<ContactMailIcon />
