@@ -1,0 +1,5 @@
+Sitemap: https://printiq.com/sitemap.xml
+
+User-agent: *
+Disallow: /*
+Disallow: /api/*

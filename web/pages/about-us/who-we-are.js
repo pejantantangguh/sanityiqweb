@@ -16,7 +16,7 @@ const styles = makeStyles((theme) => ({
 	},
 	centerAlign: {
 		textAlign: "center",
-		color: "#000",
+		color: "#fff",
 	},
 }));
 

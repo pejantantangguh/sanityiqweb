@@ -1,9 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import TabPanel from "../../Component/TabPanel/TabPanel";
-import a11yProps from "../../Component/TabPanel/a11yProps";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
 import {
 	Typography,
 	Container,
@@ -12,6 +8,8 @@ import {
 	Button,
 	Paper,
 } from "@material-ui/core";
+
+const segmentImage = require("../../public/images/print-house-min.jpg");
 
 const styles = makeStyles((theme) => ({
 	button: {
@@ -31,6 +29,10 @@ const styles = makeStyles((theme) => ({
 		padding: theme.spacing(2),
 		textAlign: "center",
 	},
+	imageResponsive: {
+		width: "75%",
+		height: "auto",
+	},
 }));
 
 function Segment(props) {
@@ -43,7 +45,7 @@ function Segment(props) {
 	return (
 		<>
 			<Container>
-				<Grid container spacing={3}>
+				<Grid container justify="center" alignItems="center" spacing={3}>
 					<Grid item sm={6}>
 						<Typography variant="h4" component="h1">
 							Run the right MIS to automate your business
@@ -60,6 +62,13 @@ function Segment(props) {
 								<Button className={classes.button}>Book a Demo</Button>
 							</a>
 						</Link>
+					</Grid>
+					<Grid item sm={6}>
+						<img
+							className={classes.imageResponsive}
+							src={segmentImage}
+							alt="IQ Mis Icon"
+						/>
 					</Grid>
 				</Grid>
 				<Grid container spacing={3}>

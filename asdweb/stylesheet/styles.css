@@ -1,0 +1,10 @@
+a {
+  text-decoration: none;
+}
+.MuiBackdrop-root {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.MuiButton-root {
+  text-transform: none !important;
+}
